@@ -24,7 +24,7 @@ body {
   border-radius: 20px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  right: 45px;
+  right: 40px;
 }
 
 h2 {
@@ -110,7 +110,8 @@ h2::after {
   cursor: not-allowed;
 }
 
-.back-btn {
+.back-link {
+  display: block;
   width: 100%;
   padding: 12px;
   background: transparent;
@@ -122,13 +123,16 @@ h2::after {
   cursor: pointer;
   margin-top: 10px;
   transition: all 0.3s ease;
+  text-align: center;
+  text-decoration: none;
 }
 
-.back-btn:hover {
+.back-link:hover {
   background: rgba(46, 213, 115, 0.1);
+  color: #2ed573;
 }
 
-.back-btn:active {
+.back-link:active {
   transform: translateY(1px);
 }
 
@@ -168,6 +172,13 @@ h2::after {
   color: white;
   font-weight: 500;
   cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.back-btn-success:hover {
+  background: linear-gradient(to right, #28c065, #27d987);
+  color: white;
 }
 
 @keyframes shake {

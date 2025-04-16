@@ -1,8 +1,6 @@
 const passwordInput = document.getElementById("newPassword");
 const confirmPasswordInput = document.getElementById("confirmPassword");
 const resetBtn = document.getElementById("resetBtn");
-const backBtn = document.getElementById("backBtn");
-const backToHomeBtn = document.getElementById("backToHomeBtn");
 const resetForm = document.getElementById("resetForm");
 const successMessage = document.getElementById("successMessage");
 const togglePassword = document.getElementById("togglePassword");
@@ -15,17 +13,6 @@ togglePassword.addEventListener("click", function () {
     type === "password"
       ? '<i class="fas fa-eye"></i>'
       : '<i class="fas fa-eye-slash"></i>';
-});
-
-// Add back button event listener
-backBtn.addEventListener("click", function () {
-  // Redirect to the previous page or home page
-  window.history.back(); // or window.location.href = "index.html";
-});
-
-backToHomeBtn.addEventListener("click", function () {
-  // Redirect to home page
-  window.location.href = "index.html";
 });
 
 resetBtn.addEventListener("click", function (e) {

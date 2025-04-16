@@ -10,8 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../admin.css">
 
     <title>Plants Dashboard</title>
 </head>
@@ -362,7 +362,7 @@
 
 
         <div class="col-12 col-xl-9">
-            <div class="nav">
+            <!-- <div class="nav">
                 <div class="d-flex justify-content-between align-items-center w-100 mb-3 mb-md-0">
                     <div class="d-flex justify-content-start align-items-center">
                         <button id="toggle-navbar" >
@@ -381,253 +381,38 @@
 
                     <button class="btn-notif d-none d-md-block"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
-            </div>
-
-            <div class="content">
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="content-title">Statistics</h2>
-                        <h5 class="content-desc mb-4">Your business growth</h5>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="statistics-card">
-
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="d-flex flex-column justify-content-between align-items-start">
-                                    <h5 class="content-desc">Employees</h5>
-
-                                    <h3 class="statistics-value">18,500,000</h3>
-                                </div>
-
-                                <button class="btn-statistics">
-                                    <i class="fa-solid fa-question"></i>
-                                </button>
-                            </div>
-
-                            <div class="statistics-list">
-                                <i class="fa-solid fa-question"></i>
-                                <i class="fa-solid fa-question"></i>
-                                <i class="fa-solid fa-question"></i>
-                                <i class="fa-solid fa-question"></i>
-                                <i class="fa-solid fa-question"></i>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="statistics-card">
-
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="d-flex flex-column justify-content-between align-items-start">
-                                    <h5 class="content-desc">Teams</h5>
-
-                                    <h3 class="statistics-value">122,000</h3>
-                                </div>
-
-                                <button class="btn-statistics">
-                                    <i class="fa-solid fa-question"></i>
-                                </button>
-                            </div>
-
-                            <div class="statistics-list">
-                                <div class="statistics-icon award">
-                                    <i class="fa-solid fa-question"></i>
-                                </div>
-                                <div class="statistics-icon globe">
-                                    <i class="fa-solid fa-question"></i>
-                                </div>
-                                <div class="statistics-icon target">
-                                    <i class="fa-solid fa-question"></i>
-                                </div>
-                                <div class="statistics-icon box">
-                                    <i class="fa-solid fa-question"></i>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="statistics-card">
-
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="d-flex flex-column justify-content-between align-items-start">
-                                    <h5 class="content-desc">Projects</h5>
-
-                                    <h3 class="statistics-value">150,000,000</h3>
-                                </div>
-
-                                <button class="btn-statistics">
-                                    <i class="fa-solid fa-question"></i>
-                                </button>
-                            </div>
-
-                            <div class="statistics-list">
-                                <div class="statistics-icon one">
-                                    <span>SK</span>
-                                </div>
-                                <div class="statistics-icon two">
-                                    <span>DW</span>
-                                </div>
-                                <div class="statistics-icon three">
-                                    <span>FJ</span>
-                                </div>
-                                <div class="statistics-icon four">
-                                    <span>AP</span>
-                                </div>
-                                <div class="statistics-icon five">
-                                    <span>ML</span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row mt-5">
-                    <div class="col-12 col-lg-6">
-                        <h2 class="content-title">Documents</h2>
-                        <h5 class="content-desc mb-4">Standard procedure</h5>
-
-                        <div class="document-card">
-                            <div class="document-item">
-                                <div class="d-flex justify-content-start align-items-center">
-                                    <div class="document-icon box">
-                                        <i class="fa-solid fa-question"></i>
-                                    </div>
-
-                                    <div class="d-flex flex-column justify-content-between align-items-start">
-                                        <h2 class="document-title">Customer Guide</h2>
-
-                                        <span class="document-desc">180 MB • PDF</span>
-                                    </div>
-                                </div>
-
-                                <button class="btn-statistics">
-                                    <i class="fa-solid fa-question"></i>
-                                </button>
-
-                            </div>
-
-                            <div class="document-item">
-                                <div class="d-flex justify-content-start align-items-center">
-                                    <div class="document-icon globe">
-                                        <i class="fa-solid fa-question"></i>
-                                    </div>
-
-                                    <div class="d-flex flex-column justify-content-between align-items-start">
-                                        <h2 class="document-title">Twitch Record</h2>
-
-                                        <span class="document-desc">700 GB • MP4</span>
-                                    </div>
-                                </div>
-
-                                <button class="btn-statistics">
-                                    <i class="fa-solid fa-question"></i>
-                                </button>
-
-                            </div>
-
-                            <div class="document-item">
-                                <div class="d-flex justify-content-start align-items-center">
-                                    <div class="document-icon database">
-                                        <i class="fa-solid fa-question"></i>
-                                    </div>
-
-                                    <div class="d-flex flex-column justify-content-between align-items-start">
-                                        <h2 class="document-title">Personas Datasets</h2>
-
-                                        <span class="document-desc">11 MB • CSV</span>
-                                    </div>
-                                </div>
-
-                                <button class="btn-statistics">
-                                    <i class="fa-solid fa-question"></i>
-                                </button>
-
-                            </div>
-
-                            <div class="document-item">
-                                <div class="d-flex justify-content-start align-items-center">
-                                    <div class="document-icon target">
-                                        <i class="fa-solid fa-question"></i>
-                                    </div>
-
-                                    <div class="d-flex flex-column justify-content-between align-items-start">
-                                        <h2 class="document-title">Marketing Book</h2>
-
-                                        <span class="document-desc">891 MB • PDF</span>
-                                    </div>
-                                </div>
-
-                                <button class="btn-statistics">
-                                    <i class="fa-solid fa-question"></i>
-                                </button>
-
-                            </div>
-
-
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-6">
-                        <h2 class="content-title">History</h2>
-                        <h5 class="content-desc mb-4">Track the flow</h5>
-
-                        <div class="document-card">
-                            <div class="document-item">
-                                <div class="d-flex justify-content-start align-items-center">
-
-                                    <div class="d-flex flex-column justify-content-between align-items-start">
-                                        <h2 class="document-title">Amalia Syahrina</h2>
-
-                                        <span class="document-desc">Promoted to Sr. Website Designer</span>
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                            <div class="document-item">
-                                <div class="d-flex justify-content-start align-items-center">
-
-                                    <div class="d-flex flex-column justify-content-between align-items-start">
-                                        <h2 class="document-title">Ah Park Yo</h2>
-
-                                        <span class="document-desc">Promoted to Front-End Developer</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="document-item">
-                                <div class="d-flex justify-content-start align-items-center">
-
-                                    <div class="d-flex flex-column justify-content-between align-items-start">
-                                        <h2 class="document-title">Sintia Siny</h2>
-
-                                        <span class="document-desc">Promoted to Accounting Executive</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="document-item">
-                                <div class="d-flex justify-content-start align-items-center">
-
-                                    <div class="d-flex flex-column justify-content-between align-items-start">
-                                        <h2 class="document-title">Jerami Putu</h2>
-
-                                        <span class="document-desc">Promoted to Quality Manager</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
+            </div> -->
+            <p class="mt-4 ms-4"><a class="text-secondary" href="../manage_journals.html">Manage Journal > </a><a href="add.html" class="text-secondary">Pending > </a><u>Detail Journal</u></p>
+            <header class="header text-center mt-5">
+                <h1>
+                    Lorem, ipsum dolor.
+                </h1>
+            </header>
+            <div class="mx-3"> 
+                <img class="mt-4 w-75" src="" alt="this is image user">
+                <article>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus nesciunt quas doloribus iste alias sunt rem ex mollitia recusandae beatae voluptate officiis, tempore atque sed pariatur consequatur corrupti eligendi suscipit unde autem enim impedit cum at? Incidunt suscipit molestias repudiandae corporis quae, hic eaque expedita nihil, porro, in ullam tenetur?
+                    </p>
+                </article>
+                <img class="mt-4 w-75" src="" alt="this is image user">
+                <article>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus nesciunt quas doloribus iste alias sunt rem ex mollitia recusandae beatae voluptate officiis, tempore atque sed pariatur consequatur corrupti eligendi suscipit unde autem enim impedit cum at? Incidunt suscipit molestias repudiandae corporis quae, hic eaque expedita nihil, porro, in ullam tenetur?
+                    </p>
+                </article>
+                <img class="mt-4 w-75" src="" alt="this is image user">
+                <article>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus nesciunt quas doloribus iste alias sunt rem ex mollitia recusandae beatae voluptate officiis, tempore atque sed pariatur consequatur corrupti eligendi suscipit unde autem enim impedit cum at? Incidunt suscipit molestias repudiandae corporis quae, hic eaque expedita nihil, porro, in ullam tenetur?
+                    </p>
+                </article>
+                <img class="mt-4 w-75" src="" alt="this is image user">
+                <article>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus nesciunt quas doloribus iste alias sunt rem ex mollitia recusandae beatae voluptate officiis, tempore atque sed pariatur consequatur corrupti eligendi suscipit unde autem enim impedit cum at? Incidunt suscipit molestias repudiandae corporis quae, hic eaque expedita nihil, porro, in ullam tenetur?
+                    </p>
+                </article>
             </div>
         </div>
     </div>

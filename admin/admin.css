@@ -72,8 +72,7 @@ aside #toggle-navbar {
   font-size: 14px;
   line-height: 21px;
   color: #ABB3C4;
-  margin-top: 40px;
-  margin-bottom: 12px;
+  margin-top: 40 12px;
 }
 .sidebar-item {
   text-decoration: none;
@@ -130,7 +129,7 @@ aside #toggle-navbar {
 }
 @media (min-width: 1200px) {
   .nav {
-    padding: 50px 64px 24px 0px;
+    padding: 50px 64px 0px 0px;
   }
 }
 .nav .btn-notif {
@@ -200,8 +199,11 @@ aside #toggle-navbar {
   font-weight: 300;
   font-size: 12px;
   line-height: 18px;
-  color: #ABB3C4;
   width: 100%;
+}
+
+.nav-input::placeholder{
+  color: #ABB3C4;
 }
 @media (min-width: 576px) {
   .nav-input {
@@ -212,7 +214,7 @@ aside #toggle-navbar {
 }
 
 .content {
-  padding: 10px 14px 24px 14px;
+  padding: 10px 14px 10px 14px;
 }
 @media (min-width: 1200px) {
   .content {
@@ -223,7 +225,6 @@ aside #toggle-navbar {
 .content-title {
   font-weight: 500;
   font-size: 20px;
-  line-height: 30px;
   color: #121F3E;
 }
 .content-title:first-of-type {
@@ -347,6 +348,17 @@ aside #toggle-navbar {
   margin-right: 16px;
   border-radius: 50%;
 }
+
+#categories {
+  margin-left: 38px;
+  color: #ABB3C4;
+}
+
+#categories:hover{
+  color: rgb(130, 130, 130);
+  cursor: pointer;
+}
+
 .document-card .document-item .document-icon.award {
   background: #F4F9EC;
 }
@@ -371,6 +383,7 @@ aside #toggle-navbar {
   margin-bottom: 20px;
   border-bottom: 1px solid #F7F7FA;
 }
+
 .document-title {
   font-weight: 600;
   font-size: 16px;
@@ -392,7 +405,8 @@ aside #toggle-navbar {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: #F8F8FA;
+  color: white;
+  background: #2ED16C;
 }
 
 .employee-stat {
@@ -622,4 +636,24 @@ aside #toggle-navbar {
   .wrapperTable .tables tbody tr td {
     font-size: 14px;
   }
+}
+
+#pop-logo{
+  color: #2DB878;
+}
+
+.sidebar-item:hover #pop-logo{
+  color: #259963;
+}
+
+.sidebar-item:hover #pop-items{
+  color: #259963;
+}
+
+a{
+  text-decoration: none;
+}
+
+#leaf{
+  color: #19C078;
 }

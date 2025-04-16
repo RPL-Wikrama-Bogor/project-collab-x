@@ -101,7 +101,7 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item border-b" href="#">Profile</a></li>
                                 <li><a class="dropdown-item border-b" href="#">My Plant</a></li>
-                                <li><a class="dropdown-item border-b" href="#">Reset Password</a></li>
+                                <li><a class="dropdown-item border-bottom" href="#" data-bs-toggle="modal" data-bs-target="#resetPasswordModal">Reset Password</a></li>
                                 <li><a class="dropdown-item" href="#">Logout</a></li>
                             </ul>
                         </li>
@@ -117,6 +117,24 @@
         </nav>
     </div>
 
+    <!-- Model Dialog -->
+    <div class="modal fade" id="resetPasswordModal" tabindex="-1" aria-labelledby="resetPasswordModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="resetPasswordModalLabel">Konfirmasi Reset Password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+                <div class="modal-body">
+                    Apakah Anda yakin ingin mereset password?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                    <a href="./12410462/index.html" class="btn btn-primary">Lanjutkan</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Banner -->
     <div class="banner">

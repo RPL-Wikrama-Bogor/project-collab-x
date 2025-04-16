@@ -21,15 +21,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- custom css -->
     <link rel="stylesheet" href="user.css">
     <link rel="stylesheet" href="about.css">
+    
 
 </head>
 
 <body>
-
+    
     <div class="container">
         <nav class="navbar navbar-expand-lg fixed-top navbar-light pt-3">
             <div class="container-fluid">
@@ -101,7 +103,7 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item border-b" href="#">Profile</a></li>
                                 <li><a class="dropdown-item border-b" href="#">My Plant</a></li>
-                                <li><a class="dropdown-item border-bottom" href="#" data-bs-toggle="modal" data-bs-target="#resetPasswordModal">Reset Password</a></li>
+                                <li><a class="dropdown-item border-b" href="#" data-bs-toggle="modal" data-bs-target="#resetPasswordModal">Reset Password</a></li>
                                 <li><a class="dropdown-item" href="#">Logout</a></li>
                             </ul>
                         </li>
@@ -126,7 +128,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
                 </div>
                 <div class="modal-body">
-                    Apakah Anda yakin ingin mereset password?
+                    Are you sure you want to reset your password?
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
@@ -183,7 +185,37 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
+<!-- Logout Confirmation Modal -->
+<div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="logoutModalLabel">Konfirmasi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Apakah anda yakin untuk logout?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tidak</button>
+                <button type="button" class="btn btn-success" id="confirmLogout">Ya</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
+<script>
+      document.getElementById('confirmLogout').addEventListener('click', function() {
+        window.location.href = '12410475/logout.html'; // Redirect to logout page
+    });
+
+    // Trigger modal when logout link is clicked
+    document.querySelector('a[href="12410475/logout.html"]').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        var logoutModal = new bootstrap.Modal(document.getElementById('logoutModal'));
+        logoutModal.show();
+    });
+</script>
 
 </html>

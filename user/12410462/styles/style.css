@@ -2,29 +2,38 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
   background: linear-gradient(135deg, #2ed573, #34e89e);
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px 0;
+}
+
+main {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .form-wrapper {
   position: relative;
-  width: 300%;
+  width: 100%;
   max-width: 400px;
   padding: 40px;
   background: rgba(255, 255, 255, 0.95);
   border-radius: 20px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  right: 40px;
 }
 
 h2 {
@@ -36,7 +45,7 @@ h2 {
 }
 
 h2::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 60px;
   height: 4px;
@@ -182,11 +191,77 @@ h2::after {
 }
 
 @keyframes shake {
-  0%, 100% { transform: translateX(0); }
-  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
-  20%, 40%, 60%, 80% { transform: translateX(5px); }
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-5px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(5px);
+  }
 }
 
 .shake {
   animation: shake 0.5s;
+}
+
+/* Footer Styles */
+.foot {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 15px 30px;
+  color: white;
+  border-radius: 10px;
+  margin-top: auto;
+  max-width: 1200px;
+}
+
+.foot .copyright {
+  margin-bottom: 0;
+}
+
+.foot ul {
+  margin: 0;
+  padding: 0;
+}
+
+.foot .li-r {
+  margin-left: 15px;
+}
+
+.foot a {
+  transition: all 0.3s ease;
+}
+
+.foot a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 576px) {
+  .foot {
+    padding: 15px;
+  }
+
+  .foot .d-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .foot ul {
+    margin-top: 10px;
+    justify-content: center !important;
+  }
+
+  .foot .ms-auto {
+    margin-left: 0 !important;
+  }
 }

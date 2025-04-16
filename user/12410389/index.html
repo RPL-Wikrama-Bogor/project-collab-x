@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komunitas Pecinta Tanaman</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            background-color: #f0fdf4; /* Warna hijau muda */
+        }
+        .bg-green {
+            background-color: #4caf50 !important; /* Warna hijau utama */
+        }
+        .text-green {
+            color: #4caf50 !important;
+        }
+        .btn-green {
+            background-color: #4caf50;
+            color: white;
+        }
+        .btn-green:hover {
+            background-color: #388e3c;
+        }
+        .border-green {
+            border-color: #4caf50 !important;
+        }
+    </style>
+</head>
+<body class="bg-green-50 font-sans">
+    <!-- Header -->
+    <header class="bg-green-600 shadow">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <button onclick="window.location.href='about.html'" class="bg-white text-green-600 px-4 py-2 rounded shadow hover:bg-gray-100">
+                <i class="fas fa-arrow-left mr-2"></i>Kembali ke Beranda
+            </button>
+            <div class="flex items-center space-x-4">
+                <input class="border rounded px-2 py-1" placeholder="Cari komunitas..." type="text"/>
+                <button class="text-white">Masuk</button>
+                <button class="bg-white text-green-600 px-4 py-1 rounded">Daftar</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <div class="container mx-auto px-4 py-6 flex">
+        <!-- Sidebar -->
+        <aside class="w-1/4">
+            <nav class="space-y-4">
+                <a class="flex items-center text-green-700 hover:text-green-900" href="#">
+                    <i class="fas fa-home mr-2"></i> Beranda
+                </a>
+                <a class="flex items-center text-green-700 hover:text-green-900" href="#">
+                    <i class="fas fa-seedling mr-2"></i> Tanaman
+                </a>
+                <a class="flex items-center text-green-700 hover:text-green-900" href="#">
+                    <i class="fas fa-tags mr-2"></i> Tag
+                </a>
+                <a class="flex items-center text-green-700 hover:text-green-900" href="#">
+                    <i class="fas fa-comments mr-2"></i> Diskusi
+                </a>
+                <a class="flex items-center text-green-700 hover:text-green-900" href="#">
+                    <i class="fas fa-calendar-alt mr-2"></i> Acara
+                </a>
+                <a class="flex items-center text-green-700 hover:text-green-900" href="#">
+                    <i class="fas fa-users mr-2"></i> Komunitas
+                </a>
+            </nav>
+            <div class="mt-6">
+                <h2 class="text-green-700 font-semibold">KOLEKTIF</h2>
+                <p class="text-sm text-green-600">
+                    Komunitas untuk tanaman favorit Anda.
+                    <a class="text-green-500" href="#">Jelajahi semua Kolektif</a>
+                </p>
+            </div>
+            <div class="mt-6">
+                <h2 class="text-green-700 font-semibold">TIM</h2>
+                <p class="text-sm text-green-600">
+                    Berkolaborasi dan tumbuh bersama dengan Komunitas Pecinta Tanaman untuk Tim.
+                </p>
+                <button class="bg-green-500 text-white px-4 py-2 rounded mt-2">Coba Tim Gratis</button>
+                <a class="text-green-500 block mt-2" href="#">Jelajahi Tim</a>
+            </div>
+        </aside>
+
+        <!-- Bagian Utama -->
+        <main class="w-3/4 ml-6">
+            <!-- Diskusi -->
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-xl font-semibold text-green-700">Diskusi Terbaru</h2>
+                <button class="bg-green-500 text-white px-4 py-2 rounded">Mulai Diskusi</button>
+            </div>
+            <div class="space-y-4">
+                <!-- Kartu Diskusi -->
+                <div class="bg-white p-4 rounded shadow">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center space-x-4">
+                            <div class="text-center">
+                                <p class="text-green-700">5 suara</p>
+                                <p class="text-green-500">2 jawaban</p>
+                                <p class="text-green-700">12 dilihat</p>
+                            </div>
+                            <div>
+                                <a class="text-green-500 font-semibold" href="#">Bagaimana cara merawat Monstera Deliciosa?</a>
+                                <p class="text-green-600">
+                                    Tanaman Monstera sangat indah, tetapi saya kesulitan menjaga daunnya tetap sehat. Ada tips?
+                                </p>
+                                <div class="flex space-x-2 mt-2">
+                                    <span class="bg-green-200 text-green-700 rounded px-2">Monstera</span>
+                                    <span class="bg-green-200 text-green-700 rounded px-2">Perawatan Tanaman</span>
+                                    <span class="bg-green-200 text-green-700 rounded px-2">Tanaman Indoor</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-green-600">ditanyakan 5 menit lalu</p>
+                            <p class="text-green-500">PlantLover123</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tambahkan lebih banyak kartu diskusi jika diperlukan -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-green-600 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+             
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Tentang Komunitas</h3>
+                    <p class="text-sm">
+                        Komunitas Pecinta Tanaman adalah tempat di mana para pecinta tanaman berkumpul, berbagi tips, dan tumbuh bersama. Bergabunglah dengan kami untuk menjelajahi keindahan alam dan belajar cara merawat tanaman Anda.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Beranda</a></li>
+                        <li><a href="#" class="hover:underline">Tanaman</a></li>
+                        <li><a href="#" class="hover:underline">Komunitas</a></li>
+                        <li><a href="#" class="hover:underline">Acara</a></li>
+                        <li><a href="#" class="hover:underline">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Hubungi Kami</h3>
+                    <p class="text-sm mb-2"><i class="fas fa-envelope mr-2"></i> support@pecintatanaman.com</p>
+                    <p class="text-sm mb-4"><i class="fas fa-phone mr-2"></i> +62 812 3456 7890</p>
+                    <h3 class="text-lg font-semibold mb-4">Alamat</h3>
+                    <p class="text-sm">
+                        Jl. Hijau Lestari No. 123<br>
+                        Jakarta, Indonesia
+                    </p>
+                </div>
+
+                <!-- Media Sosial -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Ikuti Kami</h3>
+                    <p class="text-sm mb-4">Tetap terhubung dengan kami melalui media sosial:</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-gray-200"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white hover:text-gray-200"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white hover:text-gray-200"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white hover:text-gray-200"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bagian Bawah -->
+            <div class="mt-8 border-t border-green-500 pt-4 text-center">
+                <p class="text-sm">&copy; 2025 Komunitas Pecinta Tanaman. Hak cipta dilindungi.</p>
+                <p class="text-sm mt-2">
+                    Dibuat dengan <i class="fas fa-heart text-red-500"></i> oleh tim Komunitas Pecinta Tanaman.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -70,11 +70,6 @@
     }
 }
 
-header {
-    margin-top: 80px;
-    background-color: #19C078 !important;
-    color: #ffffff !important;
-}
 
 .footer1 {
     background: #263238;
@@ -155,40 +150,34 @@ p.copyright {
     }
 }
 
-/* button */
-.anm {
-    width: 6.5em;
-    height: 2.3em;
-    margin: 0.5em;
-    background: #39dd96;
-    color: white;
-    border: none;
-    border-radius: 0.925em;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-   }
-
-img
-{
-    width: 300px;
-    max-width: 100%;
-    height: 200px;
-    border-radius: 10px;
+.header {
+    height: 50vh;
+    background-image:
+        url('menanam-pohon.png');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: 10px;
+    position: relative;
+  }
+
+  @media (max-width: 767px){
+    .header {
+      height: 50vh;
+      background-image:
+          url('menanam-pohon.png');
+      background-size: cover;
+      background-position: middle;
+      position: relative;
+    }
+  }
+
+.line {
+    background-color: #19C078;
+    padding: 2px;
 }
 
-.card-title {
-    margin-bottom: 30px;
+main {
+    padding: 2rem 3rem;
+    padding-bottom: 90px;
 }
 
-.Subtitle {
-    font-size: 14px;
-    color: #6c757d;
-}
+

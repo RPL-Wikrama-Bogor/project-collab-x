@@ -12,6 +12,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
       }
       .container {
         background: #d9f99d;
@@ -19,6 +20,7 @@
         padding: 2rem;
         margin: 20px;
         border-radius: 15px;
+        margin-top: auto;
       }
       .form-title {
         font-size: 2rem;
@@ -96,4 +98,23 @@
       }
       button:hover {
         text-decoration: underline;
+      }
+
+      .footer {
+        background-color: #212c31;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: auto;
+      }
+      
+      .footer .sosmed a {
+        color: white;
+        margin-left: 15px;
+        font-size: 1.2rem;
+        text-decoration: none;
       }

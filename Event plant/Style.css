@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url(apa\ aja\ bileh.png);
+    background-size:cover;
+    
+}
+
+nav{
+    background-color: #054400;
+}
+
+header {
+    background: #054400;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.events, .gallery, .registration, footer {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #689F38;
+}
+
+h3{
+    color: white;
+}
+
+p{
+    color: white;
+}
+.gallery img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 8px;
+}

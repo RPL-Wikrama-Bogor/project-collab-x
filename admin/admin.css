@@ -13,6 +13,30 @@ html, body {
   outline: none;
 }
 
+.wrapperTable h2.content-title,
+.wrapperTable p.content-desc {
+  margin-bottom: 8px; 
+}
+
+.wrapperTable {
+  margin-top: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.tables {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tables th, .tables td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+  background-color: #fff;
+}
+
+
 .screen-cover {
   position: fixed;
   top: 0;
@@ -33,7 +57,10 @@ html, body {
   }
 }
 
-aside {
+.sidebar {
+  position: fixed;
+  width: 260px;
+  height: 100vh;
   background-color: #fff;
   padding: 50px 24px;
   padding-bottom: 250px;
@@ -42,8 +69,16 @@ aside {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index:2;
+
 }
+
+.main-content {
+  margin-left: 200px;
+  padding: 20px;
+  width: 200px;
+}
+
 aside #toggle-navbar {
   margin-left: 20px;
 }
@@ -623,3 +658,4 @@ aside #toggle-navbar {
     font-size: 14px;
   }
 }
+

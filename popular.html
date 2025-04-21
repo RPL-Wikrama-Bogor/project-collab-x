@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Popular Plants</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #d9fdd3;
+      padding-top: 90px; 
+    }
+
+    .judul h3 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: bold;
+      color: #28a745;
+    }
+
+    .card {
+      margin-bottom: 30px;
+    }
+
+    .navbar {
+      background-color: #ffffff; 
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-nav .nav-link {
+      color: #333;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #28a745;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light pt-3">
+            <div class="container-fluid">
+                <!-- <a class="navbar-brand" href="#" style="width: 60px;">
+                    <img src="../assets/img/user-page/logo-text.svg" alt="">
+                </a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-bar"
+                    aria-controls="navbar-bar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse float-right" id="navbar-bar">
+                    <ul class="navbar-nav align-items-center ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Plants
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item border-b" href="#">Learn About Plants App</a></li>
+                                <li><a class="dropdown-item border-b" href="#">Process to Register</a></li>
+                                <li><a class="dropdown-item border-b" href="#">Terms And Conditions</a></li>
+                                <li><a class="dropdown-item" href="#">FAQs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Gallery
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item border-b" href="#">Plant Collection</a></li>
+                                <li><a class="dropdown-item border-b" href="#">Popular Plants</a></li>
+                                <li><a class="dropdown-item border-b" href="#">Videos & Documentations</a></li>
+                                <li><a class="dropdown-item" href="#">Plant-based art</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Journals
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item border-b" href="#">Create</a></li>
+                                <li><a class="dropdown-item" href="#">Search</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Community</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ContactUs</a>
+                        </li>
+                        <!-- after login -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link profile dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user"></i>
+                                Halo, Fema!
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item border-b" href="#">Profile</a></li>
+                                <li><a class="dropdown-item border-b" href="#">My Plant</a></li>
+                                <li><a class="dropdown-item border-b" href="#">Reset Password</a></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li class="nav-item btn-nav">
+                            <div class="d-flex">
+                                <a class="btn btn-outline-success">Sign In</a>
+                                <a class="btn btn-green" style="margin-left: 10px;">Sign Up</a>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+  <!-- Judul -->
+  <div class="container judul">
+    <h3>Popular Plants</h3>
+  </div>
+
+  <!-- Card Section -->
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 mb-4" >
+        <div class="card h-100">
+          <img src="img/kuping gajah.webp" class="card-img-top" alt="kuping gajah">
+          <div class="card-body">
+            <h5 class="card-title">Kuping Gajah</h5>
+            <p class="card-text">Tanaman hias populer dengan daun besar berbentuk seperti telinga gajah.</p>
+            <a href="#" class="btn btn-primary">Lihat Detail</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="img/kuping gajah.webp" class="card-img-top" alt="kuping gajah">
+          <div class="card-body">
+            <h5 class="card-title">Kuping Gajah</h5>
+            <p class="card-text">Tanaman hias populer dengan daun besar berbentuk seperti telinga gajah.</p>
+            <a href="#" class="btn btn-primary">Lihat Detail</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="img/kuping gajah.webp" class="card-img-top" alt="kuping gajah">
+          <div class="card-body">
+            <h5 class="card-title">Kuping Gajah</h5>
+            <p class="card-text">Tanaman hias populer dengan daun besar berbentuk seperti telinga gajah.</p>
+            <a href="#" class="btn btn-primary">Lihat Detail</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4" >
+        <div class="card h-100">
+          <img src="img/janda bolong.jpg" class="card-img-top" alt="kuping gajah">
+          <div class="card-body">
+            <h5 class="card-title">Janda bolong</h5>
+            <p class="card-text">Tanaman hias populer dengan daun besar berbentuk seperti telinga gajah.</p>
+            <a href="#" class="btn btn-primary">Lihat Detail</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4" >
+        <div class="card h-100">
+          <img src="img/janda bolong.jpg" class="card-img-top" alt="kuping gajah">
+          <div class="card-body">
+            <h5 class="card-title">Janda Bolong</h5>
+            <p class="card-text">Tanaman hias populer dengan daun besar berbentuk seperti telinga gajah.</p>
+            <a href="#" class="btn btn-primary">Lihat Detail</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4" >
+        <div class="card h-100">
+          <img src="img/janda bolong.jpg" class="card-img-top" alt="kuping gajah">
+          <div class="card-body">
+            <h5 class="card-title">Janda Bolong</h5>
+            <p class="card-text">Tanaman hias populer dengan daun besar berbentuk seperti telinga gajah.</p>
+            <a href="#" class="btn btn-primary">Lihat Detail</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

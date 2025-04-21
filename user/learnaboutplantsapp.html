@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn About Plants App</title>
+    <!-- Menyertakan link ke Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Menambahkan gambar latar belakang dengan resolusi tinggi */
+        body {
+            background-image: url('image.png'); /* Ganti dengan URL gambar resolusi tinggi */
+            background-size: cover;  /* Menyesuaikan gambar agar memenuhi seluruh layar */
+            background-position: center;  /* Memastikan gambar berada di tengah */
+            background-attachment: fixed;  /* Membuat gambar latar tetap ketika halaman di-scroll */
+            color: black;  /* Mengubah warna teks menjadi putih agar kontras dengan latar belakang */
+        }
+
+        /* Glassmorphism Style untuk Main Header */
+        header {
+            background: rgba(255, 255, 255, 0.1); /* Transparansi */
+            border-radius: 10px;
+            backdrop-filter: blur(10px); /* Efek blur latar belakang */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            margin-bottom: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        header:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Efek perubahan warna saat hover */
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        /* Animasi Hover untuk Card */
+        .card {
+            background: rgba(255, 255, 255, 0.1); /* Transparansi */
+            border-radius: 10px;
+            backdrop-filter: blur(10px); /* Efek blur latar belakang */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+
+        /* Efek Hover untuk Card */
+        .card:hover {
+            transform: translateY(-10px); /* Card bergerak naik sedikit */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan lebih besar */
+        }
+
+        /* Gaya untuk Tombol Panah Kembali */
+        .back-button {
+            z-index: 10;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 20px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: #45a049;
+            transform: scale(1.1); /* Membesarkan tombol saat hover */
+        }
+
+        .article-image {
+            height: 150px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Tombol Panah Kembali -->
+    <button class="back-button" onclick="window.history.back()">
+        ←
+    </button>
+
+    <!-- Header Utama dengan Glassmorphism -->
+    <header>
+        <h1>Pelajari tentang kami</h1>
+    </header>
+
+    <div class="container my-5">
+        <div class="row">
+            <!-- Artikel 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Menjelajahi Aplikasi "Learn About Plants"</h5>
+                                <p class="card-text">Aplikasi "Learn About Plants" menawarkan cara yang menyenangkan dan interaktif untuk mempelajari berbagai jenis tanaman di seluruh dunia. Pengguna dapat mengetahui informasi detail tentang tanaman, termasuk habitat, jenis, dan manfaatnya.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="article-image" style="background-image: url('https://example.com/plants-image1.jpg');"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Artikel 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Fitur Utama dari Aplikasi "Learn About Plants"</h5>
+                                <p class="card-text">Aplikasi ini dilengkapi dengan fitur pencarian yang memungkinkan pengguna mencari tanaman berdasarkan nama atau kategori. Selain itu, aplikasi ini juga menyediakan gambar dan video edukatif tentang cara merawat tanaman.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="article-image" style="background-image: url('https://example.com/plants-image2.jpg');"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Artikel 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Kenapa Aplikasi "Learn About Plants" Sangat Berguna?</h5>
+                                <p class="card-text">Bagi pecinta tanaman, aplikasi ini sangat membantu dalam memberikan pengetahuan lebih dalam tentang dunia tumbuhan. Dengan antarmuka yang ramah pengguna dan informasi yang akurat, aplikasi ini ideal untuk digunakan oleh semua kalangan.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="article-image" style="background-image: url('https://example.com/plants-image3.jpg');"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menyertakan link ke Bootstrap JS dan dependensi -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

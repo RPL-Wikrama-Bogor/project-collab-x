@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pendaftaran Tanaman Baru - Aplikasi Tanaman</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<!-- google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+  rel="stylesheet">
+
+<!-- font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="register.css" />
+  <link rel="stylesheet" href="user.css">
+  <link rel="stylesheet" href="about.css">
+
+</head>
+<body>
+  <header>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light pt-3">
+            <div class="container-fluid">
+                <!-- <a class="navbar-brand" href="#" style="width: 60px;">
+                    <img src="../assets/img/user-page/logo-text.svg" alt="">
+                </a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-bar"
+                    aria-controls="navbar-bar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse float-right" id="navbar-bar">
+                    <ul class="navbar-nav align-items-center ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Plants
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item border-b" href="learnaboutplantsapp.html">Learn About Plants App</a></li>
+                                <li><a class="dropdown-item border-b" href="#">Process to Register</a></li>
+                                <li><a class="dropdown-item border-b" href="#">Terms And Conditions</a></li>
+                                <li><a class="dropdown-item" href="#">FAQs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Gallery
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item border-b" href="#">Plant Collection</a></li>
+                                <li><a class="dropdown-item border-b" href="#">Popular Plants</a></li>
+                                <li><a class="dropdown-item border-b" href="#">Videos & Documentations</a></li>
+                                <li><a class="dropdown-item" href="#">Plant-based art</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Journals
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item border-b" href="#">Create</a></li>
+                                <li><a class="dropdown-item" href="#">Search</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Community</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ContactUs</a>
+                        </li>
+                        <!-- after login -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link profile dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user"></i>
+                                Halo, Fema!
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item border-b" href="#">Profile</a></li>
+                                <li><a class="dropdown-item border-b" href="#">My Plant</a></li>
+                                <li><a class="dropdown-item border-b" href="#">Reset Password</a></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li class="nav-item btn-nav">
+                            <div class="d-flex">
+                                <a class="btn btn-outline-success">Sign In</a>
+                                <a class="btn btn-green" style="margin-left: 10px;">Sign Up</a>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+  </header>
+
+  <section class="form-container">
+    <h2>Register Here</h2>
+    <form action="#" method="POST">
+      <label for="plant-name">Nama Tanaman (Lokal):</label>
+      <input type="text" id="plant-name" name="plant-name" required />
+
+      <label for="scientific-name">Nama Ilmiah Tanaman:</label>
+      <input type="text" id="scientific-name" name="scientific-name" required />
+
+      <label for="growth-method">Metode Tanaman:</label>
+      <select id="growth-method" name="growth-method" required>
+        <option value="natural">Alami</option>
+        <option value="cangkok">Cangkok</option>
+        <option value="stek">Stek</option>
+        <option value="sambung">Sambung</option>
+        <option value="lainnya">Lainnya</option>
+      </select>
+
+      <label for="plant-location">Lokasi Tumbuh:</label>
+      <input type="text" id="plant-location" name="plant-location" required />
+
+      <label for="plant-image">Unggah Foto Tanaman:</label>
+      <input type="file" id="plant-image" name="plant-image" accept="image/*" required />
+
+      <label for="plant-description">Deskripsi Tanaman:</label>
+      <textarea id="plant-description" name="plant-description" rows="4" required></textarea>
+
+      <button type="submit">Daftarkan Tanaman</button>
+    </form>
+  </section>
+
+  <div class="footer">
+    <div class="d-flex justify-content-between align-items-center">
+        <p class="copyright">&copy; Copyright 2022, Scindapsus Indonesia</p>
+        <ul class="d-flex align-items-center ms-auto" style="list-style-type: none;">
+            <li class="li-r"><a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-instagram"
+                        style="font-size: 18px;"></i></a></li>
+            <li class="li-r"><a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-whatsapp"
+                        style="font-size: 18px;"></i></a></li>
+        </ul>
+    </div>
+</div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"></script>
+
+</body>
+</html>

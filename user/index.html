@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQS Tumbuhan</title>
+    <!-- Link ke Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Kustomisasi CSS untuk tampilan FAQ */
+        body {
+            background-color: #f1f1f1;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-title {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .faq-item {
+            margin-bottom: 25px;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #ecf0f1;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .faq-item:hover {
+            background-color: #dfe6e9;
+        }
+
+        .faq-item h5 {
+            font-size: 1.5rem;
+            color: #2980b9;
+            cursor: pointer;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .faq-item p {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            display: none;
+            padding-left: 20px;
+        }
+
+        .faq-item.active p {
+            display: block;
+        }
+
+        .faq-item h5:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="faq-container">
+    <div class="faq-title">
+        Pertanyaan yang Sering Diajukan (FAQ) tentang Tumbuhan
+    </div>
+
+    <div class="faq-item">
+        <h5 class="faq-question">Apa itu fotosintesis?</h5>
+        <p class="faq-answer">Fotosintesis adalah proses yang dilakukan oleh tumbuhan untuk menghasilkan makanan dengan memanfaatkan sinar matahari, air, dan karbon dioksida.</p>
+    </div>
+    <div class="faq-item">
+        <h5 class="faq-question">Mengapa tumbuhan membutuhkan air?</h5>
+        <p class="faq-answer">Tumbuhan membutuhkan air untuk proses fotosintesis dan untuk membawa nutrisi dari tanah ke seluruh bagian tumbuhan.</p>
+    </div>
+    <div class="faq-item">
+        <h5 class="faq-question">Apa perbedaan antara tumbuhan berbunga dan tidak berbunga?</h5>
+        <p class="faq-answer">Tumbuhan berbunga menghasilkan bunga yang dapat berkembang menjadi buah, sedangkan tumbuhan tidak berbunga seperti lumut atau paku tidak menghasilkan bunga.</p>
+    </div>
+    <div class="faq-item">
+        <h5 class="faq-question">Apa itu klorofil dan mengapa penting bagi tumbuhan?</h5>
+        <p class="faq-answer">Klorofil adalah pigmen hijau pada tumbuhan yang memungkinkan mereka untuk menyerap cahaya matahari untuk proses fotosintesis.</p>
+    </div>
+
+</div>
+
+<!-- Link ke Bootstrap JS dan Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+<script>
+    // Menambahkan interaksi untuk membuka dan menutup jawaban FAQ
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+            item.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+</html>

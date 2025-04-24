@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glassmorphism login Formr</title>
+    <link rel="stylesheet" href="form.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="inFormBackground">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="inLoginForm">
+        <form onsubmit="return false">
+          <div class="title">
+            <h3>Login Here</h3>
+          </div>
+          <div class="inputGroup">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter Email" id="email" />
+          </div>
+          <div class="inputGroup">
+            <label for="Password">Password</label>
+            <input type="password" placeholder="Enter Password" id="password" oninput="validatePassword()" />
+            <button class="submitForm">Log In</button>
+            <div class="soical">
+              <div class="go"><i class="fab fa-google"></i></div>
+              <div class="fb"><i class="fab fa-facebook"></i></div>
+              <div class="tw"><i class="fab fa-twitter"></i></div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+

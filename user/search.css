@@ -1,0 +1,30 @@
+.shadow-tulip {
+    box-shadow: 3px 5px 10px rgb(237, 178, 230) !important;
+}
+.shadow-mawar {
+    box-shadow: 3px 5px 10px rgb(146, 28, 28) !important;
+}
+
+.shadow-lavender {
+    box-shadow: 3px 5px 10px rgb(173, 10, 214) !important;
+}
+
+.shadow-matahari {
+    box-shadow: 3px 5px 10px rgb(176, 196, 62) !important;
+}
+
+.shadow-melati {
+    box-shadow: 3px 5px 10px rgb(255, 229, 176) !important;
+}
+
+.Card {
+    transition: 0.3s;
+}
+
+.Card:hover {
+    transform:scale(1.02);
+}
+
+.form-control{
+    border-color: green;
+}

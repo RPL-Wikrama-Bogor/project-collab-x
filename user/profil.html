@@ -7,22 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plants App</title>
 
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- custom css -->
     <link rel="stylesheet" href="user.css">
     <link rel="stylesheet" href="about.css">
 
@@ -43,7 +39,7 @@
                 <div class="collapse navbar-collapse float-right" id="navbar-bar">
                     <ul class="navbar-nav align-items-center ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -93,13 +89,13 @@
                         </li>
                         <!-- after login -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link profile dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                            <a class="nav-link active profile dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fas fa-user"></i>
                                 Halo, Fema!
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item border-b" href="profil.html">Profile</a></li>
+                                <li><a class="nav-link active dropdown-item border-b " href="profil.html">Profile</a></li>
                                 <li><a class="dropdown-item border-b" href="#">My Plant</a></li>
                                 <li><a class="dropdown-item border-b" href="#">Reset Password</a></li>
                                 <li><a class="dropdown-item" href="#">Logout</a></li>
@@ -117,46 +113,41 @@
         </nav>
     </div>
 
-
-    <!-- Banner -->
-    <div class="banner">
-        <div class="header">
-            <h1 class="page-heading">
-                <span class="page-heading-primary">What is a cultivar ?</span>
-                <span class="page-heading-secondary">A cultivar, as a taxon, is an assemblage of plants that
-                    has been selected <br> for a particular characteristic 
-                    <br><br>
-                    #theheartofindonesia</span>
-            </h1>
+    <div class="container mt-5 pt-5">
+        <div class="card shadow-sm p-4">
+            <h5 class="mb-4"><i class="fas fa-user-circle me-2"></i>Profil Saya</h5>
+            <form>
+                <div class="mb-4 text-center">
+                    <img id="profilePic" src="/hayabusa.jpg" alt="Foto Profil" 
+                        style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover; border: 2px solid #ccc;">
+                </div>                
+                <div class="mb-3">
+                    <label for="nama" class="form-label">Username </span></label>
+                    <input type="text" id="username" class="form-control" value="Kevin" disabled>
+                </div>
+                <div class="mb-3">
+                    <label for="nama" class="form-label">Nama </span></label>
+                    <input type="text" id="nama" class="form-control" value="Kevin Nugraha Ramadhan" disabled>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email </span></label>
+                    <input type="email" id="email" class="form-control" value="kevinnugraha2@gmail.com" disabled>
+                </div>
+                <div class="mb-3">
+                    <label for="telepon" class="form-label">Nomor Telepon </span></label>
+                    <input type="tel" id="telepon" class="form-control" value="083390452412" disabled>
+                </div>
+                <div class="mb-4">
+                    <label for="alamat" class="form-label">Alamat (opsional)</label>
+                    <textarea id="alamat" class="form-control" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success
+                 w-100">
+                    <i class="fas fa-save me-2"></i> Simpan
+                </button>
+            </form>
         </div>
     </div>
-    <!-- End Banner -->
-
-
-    <div class="container about py-5">
-        <h2>Plants App</h2>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus dolore, delectus natus eos deserunt dignissimos cupiditate pariatur, velit veritatis suscipit similique optio at dolorum placeat atque voluptatum vero officiis doloremque?
-
-            <br><br>
-
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eius veritatis libero architecto sunt ipsum fuga, aspernatur a velit cumque. Animi minima quia temporibus vero eligendi deleniti assumenda sed eum?
-        </p>
-    </div>
-
-    <div class="footer">
-        <div class="d-flex justify-content-between align-items-center">
-            <p class="copyright">&copy; Copyright 2022, Scindapsus Indonesia</p>
-            <ul class="d-flex align-items-center ms-auto" style="list-style-type: none;">
-                <li class="li-r"><a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-instagram"
-                            style="font-size: 18px;"></i></a></li>
-                <li class="li-r"><a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-whatsapp"
-                            style="font-size: 18px;"></i></a></li>
-            </ul>
-        </div>
-    </div>
-
-
 
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
@@ -164,8 +155,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-
-
 </body>
-
 </html>

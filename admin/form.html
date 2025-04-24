@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h2 class="form-title text-center">Form registrasi</h2>
+    <form>
+      <div class="row mb-3">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Nama depan">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Nama belakang">
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col">
+          <input type="date" class="form-control" placeholder="Birthday">
+        </div>
+        <div class="col">
+          <label class="form-label d-block">Gender:</label>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="female" checked>
+            <label class="form-check-label" for="female">Laki Laki</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="male">
+            <label class="form-check-label" for="male">Wanita</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="other">
+            <label class="form-check-label" for="other">Lainnya</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col">
+          <input type="email" class="form-control" placeholder="Email">
+        </div>
+       
+      </div>
+
+     
+
+      <div class="text-center">
+        <button type="submit" class="btn btn-submit">Kirim</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

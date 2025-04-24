@@ -371,6 +371,13 @@ aside #toggle-navbar {
   margin-bottom: 20px;
   border-bottom: 1px solid #F7F7FA;
 }
+.document-titl0 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 14px;
+  margin-top: 2px;
+  color: white;
+}
 .document-title {
   font-weight: 600;
   font-size: 16px;
@@ -621,5 +628,9 @@ aside #toggle-navbar {
   }
   .wrapperTable .tables tbody tr td {
     font-size: 14px;
+  }
+  .content {
+    justify-content: center;
+    align-items: center;
   }
 }

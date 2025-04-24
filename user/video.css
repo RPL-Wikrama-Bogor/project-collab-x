@@ -1,0 +1,16 @@
+.navbar {
+  background-color: #00A36C !important; /* Warna hijau jade */
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand,
+.navbar .dropdown-toggle {
+  color: white !important; /* Warna teks putih */
+}
+
+.navbar .nav-link:hover,
+.navbar .dropdown-item:hover {
+  color: #DFF6F0 !important; /* Warna putih lebih terang saat hover */
+}
+
+

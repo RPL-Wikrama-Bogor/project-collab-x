@@ -1,0 +1,28 @@
+body{
+  background-color: #d7ebdb5c;
+}
+
+.card{
+  background-color: #3f72485c;
+  border-radius: 10px;
+  transition: transform 1s;
+  transition: ease-out 0.3s;
+  box-shadow: 0.2s;
+}
+
+
+.card:hover {
+  transform: scale(1.03);
+  transition: transform 0.8s;
+  box-shadow: 0 4px 10px rgba(55, 83, 40, 0.907);
+  transition: delay 0.5s;
+
+}
+
+.hidden {
+  display: none;
+}
+
+.card:hover .hidden {
+  display: block;
+}

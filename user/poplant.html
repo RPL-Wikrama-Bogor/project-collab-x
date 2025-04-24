@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants App</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="/user/poplant.css">
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light pt-3">
+            <div class="container-fluid">
+                <!-- <a class="navbar-brand" href="#" style="width: 60px;">
+                    <img src="../assets/img/user-page/logo-text.svg" alt="">
+                </a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-bar"
+                    aria-controls="navbar-bar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse float-right" id="navbar-bar">
+                    <ul class="navbar-nav align-items-center ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Plants
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item border-b" href="#">Learn About Plants App</a></li>
+                                <li><a class="dropdown-item border-b" href="#">Process to Register</a></li>
+                                <li><a class="dropdown-item border-b" href="#">Terms And Conditions</a></li>
+                                <li><a class="dropdown-item" href="#">FAQs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active text-success" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Gallery</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item border-b" href="#">Plant Collection</a></li>
+                                <li><a class="dropdown-item border-b active" href="/user/poplant.html">Popular Plants</a></li>
+                                <li><a class="dropdown-item border-b" href="#">Videos & Documentations</a></li>
+                                <li><a class="dropdown-item" href="#">Plant-based art</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Journals
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item border-b" href="#">Create</a></li>
+                                <li><a class="dropdown-item" href="#">Search</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Community</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ContactUs</a>
+                        </li>
+                        <!-- after login -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link profile dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user"></i>
+                                Halo, Fema!
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item border-b" href="#">Profile</a></li>
+                                <li><a class="dropdown-item border-b" href="#">My Plant</a></li>
+                                <li><a class="dropdown-item border-b" href="#">Reset Password</a></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="banner">
+        <div class="header">
+            <h1 class="page-heading">
+                <span class="page-heading-primary">Popular Plants <i class="fa-solid fa-seedling"></i></span>
+                <span class="page-heading-secondary text-light fw-bolder">most popular plants in the world, From various sources across the web<br> for a particular characteristic 
+                    <br><br>
+                    #theheartofindonesia</span>
+            </h1>
+        </div>
+    </div>
+<div class="poplant d-flex">
+    <div class="pop1 m-5 border-success" style="border-width: 3px;">
+        <img src="/user/Aloe vera.jpeg" class="">
+        <h2 class="ps-3">Aloe vera :</h2>
+        <p class="ps-2">A succulent plant that has many benefits, especially for skin health and beauty. This plant is famous for its clear and thick gel on its leaves which is often used to treat minor wounds, burns, and various skin problems.</p>
+    </div>
+    <div class="pop2 m-5 border-success" style="border-width: 3px;">
+        <img src="/user/Lilyy.jpeg" class="">
+        <h2 class="ps-3">Peace lily :</h2>
+        <p class="ps-2">Is a genus of about 60 species of monocotyledonous flowering plants in the family Araceae, native to tropical regions of the Americas and southeastern Asia. Certain species of Spathiphyllum are commonly known as spath or peace lilies</p>
+    </div>
+</div>
+<div class="poplant d-flex">
+    <div class="pop3 m-5 border-success" style="border-width: 3px;">
+        <img src="/user/rubber.jpeg" alt="">
+        <h2 class="ps-3">Rubber Plant :</h2>
+        <p class="ps-2">Rubber plants are a type of tropical tree that can grow quite large, but they can also be kept as houseplants. They prefer bright light and moist soil but can adapt to lower light and drier soil conditions.</p>
+    </div>
+    <div class="pop4 m-5 border-success" style="border-width: 3px;">
+        <img src="/user/fernn.jpeg" alt="">
+        <h2 class="ps-3">Fern plant :</h2>
+        <p class="ps-2">Ferns are a type of fern that do well in shaded areas with high humidity levels. They prefer to be kept moist, so they're a good choice for beginners who have difficulty keeping their plants watered.</p>
+    </div>
+</div>
+<div class="poplant d-flex">
+    <div class="pop5 m-5 border-success" style="border-width: 3px;">
+        <img src="/user/Snakeplant.jpeg" alt="">
+        <h2 class="ps-3">Snake plant :</h2>
+        <p class="ps-2">Snake plant is classic yet versatile house plant with sword like foliage design. It is excellent for forgetful gardener and it's considered a top air purifier plant for indoor environment and also eliminates considerable amount of benzene, formaldehyde, trichloroethylene and toluene.</p>
+    </div>
+    <div class="pop6 m-5 border-success" style="border-width: 3px;">
+        <img src="/user/Money tree.jpeg" alt="">
+        <h2 class="ps-3">Money Tree :</h2>
+        <p class="ps-2">They only require indirect light and infrequent watering, making for a no-fuss plant for beginners. The money tree is also highly rated as an air purifier for your home. A famous NASA study of indoor plants on air quality lists Pachira aquatica as one of the most effective filters of harmful pollutants.</p>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="d-flex justify-content-between align-items-center">
+        <p class="copyright">&copy; Copyright 2022, Scindapsus Indonesia</p>
+        <ul class="d-flex align-items-center ms-auto" style="list-style-type: none;">
+            <li class="li-r"><a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-instagram"
+                        style="font-size: 18px;"></i></a></li>
+            <li class="li-r"><a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-whatsapp"
+                        style="font-size: 18px;"></i></a></li>
+        </ul>
+    </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</div>
+</body>
+</html>

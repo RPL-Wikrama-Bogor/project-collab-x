@@ -1,0 +1,276 @@
+
+/* Banner */
+
+.banner{
+    margin-top: 5rem;
+  }
+
+  .header {
+    height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.25)),
+        url('/user/bg-about.png');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+  }
+  
+  @media (max-width: 767px){
+    .header {
+      height: 60vh;
+      background-image: linear-gradient(rgba(44, 41, 41, 0),
+              rgba(0, 0, 0, 0.25)),
+          url('/user/bg-about.png');
+      background-size: cover;
+      background-position: top;
+      position: relative;
+    }
+  }
+  
+  /* span {
+    color: greenyellow;
+  } */
+
+  .page-heading {
+    position: absolute;
+    top: 45%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    white-space: nowrap;
+  }
+  
+  .page-heading-primary {
+    display: block;
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: .8rem;
+  }
+  
+  .page-heading-secondary {
+    display: block;
+    font-size: 22px;
+    font-weight: 300;
+  }
+
+  .poplant {
+    gap: 40px;
+    border-color: black;
+  }
+
+  .poplant h2 {
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .pop1 {
+    transition: transform ease;
+    border-radius: 20px;
+    border: solid 5px;
+  }
+
+  .pop1:hover {
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
+  }
+
+  .pop2 {
+    transition: transform ease;
+    border-radius: 20px;
+    border: solid 5px;
+  }
+
+  .pop2:hover {
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
+  }
+
+  .pop3 {
+    transition: transform ease;
+    border-radius: 20px;
+    border: solid 5px;
+  }
+
+  .pop3:hover {
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
+  }
+
+  .pop4 {
+    transition: transform ease;
+    border-radius: 20px;
+    border: solid 5px;
+  }
+
+  .pop4:hover {
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
+  }
+
+  .pop5 {
+    transition: transform ease;
+    border-radius: 20px;
+    border: solid 5px;
+  }
+
+  .pop5:hover {
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
+  }
+
+  .pop6 {
+    transition: transform ease;
+    border-radius: 20px;
+    border: solid 5px;
+  }
+
+  .pop6:hover {
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
+  }
+
+  img {
+    height: 200px;
+  }
+
+  .footer {
+    background-color: gray;
+    color: #FFFFFF;
+
+  }
+  
+  @media (max-width: 1200px) {
+    .header {
+        height: 50vh;
+    }
+  
+    .page-heading {
+        left: 33%;
+    }
+  
+    .page-heading-primary {
+        font-size: 50px;
+    }
+  
+    .page-heading-secondary {
+        display: block;
+        font-size: 17px;
+        font-weight: 300;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .header {
+        height: 45vh;
+    }
+  
+    .page-heading {
+        left: 35%;
+    }
+  
+    .page-heading-primary {
+        font-size: 40px;
+    }
+  
+    .page-heading-secondary {
+        display: block;
+        font-size: 14px;
+        font-weight: 300;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .header {
+        height: 40vh;
+    }
+  
+    .page-heading {
+        left: 50%;
+        text-align: center;
+    }
+  
+    .page-heading-primary {
+        font-size: 38px;
+    }
+  
+    .page-heading-secondary {
+        display: block;
+        font-size: 14px;
+        font-weight: 400;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .header {
+        height: 35vh;
+    }
+  
+    .page-heading {
+        left: 50%;
+        text-align: center;
+    }
+  
+    .page-heading-primary {
+        font-size: 38px;
+    }
+  
+    .page-heading-secondary {
+        font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .header {
+        height: 35vh;
+    }
+  
+    .page-heading {
+        left: 50%;
+        text-align: center;
+    }
+  
+    .page-heading-primary {
+        font-size: 24px;
+    }
+  
+    .page-heading-secondary {
+        font-size: 9.5px;
+    }
+  }
+  
+  @media (max-width: 350px) {
+    .page-heading {
+        left: 50%;
+        text-align: center;
+    }
+  
+    .page-heading-primary {
+        font-size: 26px;
+        margin-bottom: .3rem;
+    }
+  
+    .page-heading-secondary {
+        font-size: 8px;
+    }
+  }
+  
+  /* End Banner */
+
+
+  @media (max-width: 600px){
+    .about h2{
+      font-size: 22px;
+    }
+    .about p{
+        font-size: 14px;
+      }
+  }
+  
+  @media (max-width: 400px){
+    .about h2{
+      font-size: 20px;
+    }
+    .about p{
+        font-size: 12px;
+      }
+  }

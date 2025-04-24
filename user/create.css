@@ -1,0 +1,23 @@
+.bg-url{
+    background-image: url(back.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 95vh;
+    margin-top: 70px;
+}
+
+.putih{
+    padding: 40px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+#journalPreview .card {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

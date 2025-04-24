@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,6 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+    <!-- Font awesome  -->
+    <script src="https://kit.fontawesome.com/YOUR_KIT_ID.js" crossorigin="anonymous"></script>
+
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,14 +24,15 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
     <!-- custom css -->
     <link rel="stylesheet" href="user.css">
-    <link rel="stylesheet" href="about.css">
-
+    <link rel="stylesheet" href="create.css">
 </head>
 
 <body>
-
     <div class="container">
         <nav class="navbar navbar-expand-lg fixed-top navbar-light pt-3">
             <div class="container-fluid">
@@ -43,7 +46,7 @@
                 <div class="collapse navbar-collapse float-right" id="navbar-bar">
                     <ul class="navbar-nav align-items-center ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link " aria-current="page" href="about.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -73,12 +76,12 @@
                             <a class="nav-link" href="#">News</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Journals
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item border-b" href="create.html">Create</a></li>
+                                <li><a class="dropdown-item border-b active" href="#">Create</a></li>
                                 <li><a class="dropdown-item" href="#">Search</a></li>
                             </ul>
                         </li>
@@ -116,56 +119,64 @@
             </div>
         </nav>
     </div>
+    <div class="bg-url">
+        <div class="container">
+            <div class="row justify-content-center pt-3 mb-5">
+                <div class="col-md-6 putih">
+                    <h2 class="text-center">
+                        <i class="fas fa-seedling text-success me-2"></i>
+                        Create a New Journal
+                    </h2>
+                    <form id="journalForm">
 
-
-    <!-- Banner -->
-    <div class="banner">
-        <div class="header">
-            <h1 class="page-heading">
-                <span class="page-heading-primary">What is a cultivar ?</span>
-                <span class="page-heading-secondary">A cultivar, as a taxon, is an assemblage of plants that
-                    has been selected <br> for a particular characteristic 
-                    <br><br>
-                    #theheartofindonesia</span>
-            </h1>
+                        <div class="mb-3">
+                            <label for="title" class="form-label">Title</label>
+                            <input type="text" class="form-control" id="title"
+                                placeholder="Masukkan Tittle dari Journal" name="title" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="content" class="form-label">Content</label>
+                            <textarea class="form-control" id="content" name="content" rows="5"
+                                placeholder="Masukkan content dari Journal" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="image" class="form-label">Upload Image</label>
+                            <input type="file" class="form-control" id="image" name="image" accept=".jpg, .jpeg, .png"
+                                required>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <button type="submit" class="btn btn-success rounded-pill ">Create Journal</button>
+                            <button type="button" id="view" class="btn btn-primary rounded-pill w-auto ">Lihat Jurnal </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- End Banner -->
+
+        <div id="journalPreview" class="d-none row justify-content-center mt-16"></div>
 
 
-    <div class="container about py-5">
-        <h2>Plants App</h2>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus dolore, delectus natus eos deserunt dignissimos cupiditate pariatur, velit veritatis suscipit similique optio at dolorum placeat atque voluptatum vero officiis doloremque?
 
-            <br><br>
-
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eius veritatis libero architecto sunt ipsum fuga, aspernatur a velit cumque. Animi minima quia temporibus vero eligendi deleniti assumenda sed eum?
-        </p>
-    </div>
-
-    <div class="footer">
-        <div class="d-flex justify-content-between align-items-center">
-            <p class="copyright">&copy; Copyright 2022, Scindapsus Indonesia</p>
-            <ul class="d-flex align-items-center ms-auto" style="list-style-type: none;">
-                <li class="li-r"><a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-instagram"
-                            style="font-size: 18px;"></i></a></li>
-                <li class="li-r"><a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-whatsapp"
-                            style="font-size: 18px;"></i></a></li>
-            </ul>
+        <div class="footer">
+            <div class="d-flex justify-content-between align-items-center">
+                <p class="copyright">&copy; Copyright 2022, Scindapsus Indonesia</p>
+                <ul class="d-flex align-items-center ms-auto" style="list-style-type: none;">
+                    <li class="li-r"><a href="#" class="text-white text-decoration-none"><i
+                                class="fa-brands fa-instagram" style="font-size: 18px;"></i></a></li>
+                    <li class="li-r"><a href="#" class="text-white text-decoration-none"><i
+                                class="fa-brands fa-whatsapp" style="font-size: 18px;"></i></a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-
-
-
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-
 
 </body>
+
+<script src="create.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 
 </html>

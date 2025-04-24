@@ -1,0 +1,37 @@
+.contactus{
+    margin-top: 10%;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 45px;
+    border-radius: 15px;
+    background-image: url(background_contactus.png);
+}
+
+.text-center{
+    padding-bottom: 50px;
+    color: rgb(12, 14, 41);
+}
+
+.bg-box{
+    background-color: #dcf9da;
+    border-radius: 15px;
+}
+
+.btn-style{
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.btn-style:hover{
+    background-color: #e4e4e4;
+    color: #000000;
+    transform: scale(1.01);
+}
+
+/* .background{
+    background-image: url(backgroudn\ 6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 110vh;
+    width: 100%;
+} */

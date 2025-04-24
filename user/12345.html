@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insani Plant Event</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        .hero {
+            background: url('https://via.placeholder.com/1920x600/7dbf3a/ffffff?text=Event+Tumbuhan') no-repeat center center;
+            background-size: cover;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .features .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .benefits i {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #a5cf4d;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .contact-btn {
+            background-color: #25d366;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Plants</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Learn About Plants App</a></li>
+                            <li><a class="dropdown-item" href="#">Process to Register</a></li>
+                            <li><a class="dropdown-item" href="#">Terms And Conditions</a></li>
+                            <li><a class="dropdown-item" href="#">FAQs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Event</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-user"></i> Halo, Fema!
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">My Plant</a></li>
+                            <li><a class="dropdown-item" href="#">Reset Password</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center">
+        Event Tumbuhan
+    </section>
+
+    <!-- Services Section -->
+    <section class="container text-center my-5 features">
+        <h2 class="mb-4">Hatta Plant Management</h2>
+        <p class="mb-5">Menghadirkan event tanaman, workshop hortikultura, dan edukasi pertanian ramah lingkungan</p>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="#" class="card-img-top" alt="Workshop Tanaman">
+                    <div class="card-body">
+                        <h5 class="card-title">Workshop Tanaman</h5>
+                        <a href="#" class="btn btn-outline-success">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x200/8bc34a/ffffff?text=Edukasi+Lingkungan" class="card-img-top" alt="Edukasi Lingkungan">
+                    <div class="card-body">
+                        <h5 class="card-title">Edukasi Lingkungan</h5>
+                        <a href="#" class="btn btn-outline-success">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="#" class="card-img-top" alt="Pameran Tanaman">
+                    <div class="card-body">
+                        <h5 class="card-title">Pameran Tanaman</h5>
+                        <a href="#" class="btn btn-outline-success">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="bg-success text-white py-5">
+        <div class="container">
+            <h4 class="mb-3">Tentang Kami</h4>
+            <p>
+                Insani Plant Management merupakan penyelenggara acara tanaman, edukasi lingkungan dan workshop pertanian organik yang mendidik serta menyenangkan. Kami memiliki tim berpengalaman di bidang tanaman dan event outdoor, siap mendampingi setiap langkah kegiatan dengan penuh dedikasi.
+            </p>
+            <a href="#" class="btn btn-light">Hubungi Kami</a>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="container text-center py-5 benefits">
+        <h3 class="mb-4">Mengapa Memilih Event Kami</h3>
+        <div class="row g-4">
+            <div class="col-md-2">
+                <i class="bi bi-cash-stack"></i>
+                <h6>Biaya Terjangkau</h6>
+                <p>Program edukasi dan kegiatan alam dengan harga hemat.</p>
+            </div>
+            <div class="col-md-2">
+                <i class="bi bi-people"></i>
+                <h6>Tim Ahli</h6>
+                <p>Dipandu oleh fasilitator berpengalaman dalam dunia pertanian.</p>
+            </div>
+            <div class="col-md-2">
+                <i class="bi bi-chat-dots"></i>
+                <h6>Konsultasi Gratis</h6>
+                <p>Dapatkan saran dan arahan dari tim kami secara cuma-cuma.</p>
+            </div>
+            <div class="col-md-2">
+                <i class="bi bi-clock"></i>
+                <h6>Respons Cepat</h6>
+                <p>Kami siap merespons kebutuhan Anda kapan saja.</p>
+            </div>
+            <div class="col-md-2">
+                <i class="bi bi-geo-alt"></i>
+                <h6>Lokasi Nyaman</h6>
+                <p>Tempat acara mudah dijangkau dan menyatu dengan alam.</p>
+            </div>
+            <div class="col-md-2">
+                <i class="bi bi-tree"></i>
+                <h6>Peduli Lingkungan</h6>
+                <p>Acara kami ramah lingkungan dan penuh edukasi hijau.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>Tertarik bergabung atau butuh informasi lebih lanjut? Hubungi kami:</p>
+            <a href="https://wa.me/6281234567890" class="btn contact-btn">🌿 Tanya Via WhatsApp</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

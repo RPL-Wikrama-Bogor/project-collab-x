@@ -1,0 +1,13 @@
+.plants {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.blur {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+body {
+    background: url(Gambar.png);
+}

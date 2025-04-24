@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants App</title>
+    <link rel="icon" type="image/x-icon" href="tanaman.jpg">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Data AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="terms.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light pt-3">
+            <div class="container-fluid">
+                <!-- <a class="navbar-brand" href="#" style="width: 60px;">
+                    <img src="../assets/img/user-page/logo-text.svg" alt="">
+                </a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-bar"
+                    aria-controls="navbar-bar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse float-right" id="navbar-bar">
+                    <ul class="navbar-nav align-items-center ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-item border-b nav-link dropdown-toggle" href="#"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Plants
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item border-b" href="#">Learn About Plants App</a></li>
+                                <li><a class="dropdown-item border-b" href="#">Process to Register</a></li>
+                                <li><a class="nav-link active dropdown-item border-b" aria-current="page" href="#">Terms
+                                        And Conditions</a></li>
+                                <li><a class="dropdown-item" href="#">FAQs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Gallery
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item border-b" href="#">Plant Collection</a></li>
+                                <li><a class="dropdown-item border-b" href="#">Popular Plants</a></li>
+                                <li><a class="dropdown-item border-b" href="#">Videos & Documentations</a></li>
+                                <li><a class="dropdown-item" href="#">Plant-based art</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Journals
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item border-b" href="#">Create</a></li>
+                                <li><a class="dropdown-item" href="#">Search</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Community</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ContactUs</a>
+                        </li>
+                        <!-- after login -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link profile dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user"></i>
+                                Halo, User!
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item border-b" href="#">Profile</a></li>
+                                <li><a class="dropdown-item border-b" href="#">My Plant</a></li>
+                                <li><a class="dropdown-item border-b" href="#">Reset Password</a></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li class="nav-item btn-nav">
+                            <div class="d-flex">
+                                <a class="btn btn-outline-success">Sign In</a>
+                                <a class="btn btn-green" style="margin-left: 10px;">Sign Up</a>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="plants bg-success text-white">
+        <h1>
+            <span class="plants fs-1" data-aos="fade-down">Terms And Conditions</span>
+        </h1>
+    </div>
+    <!-- Terms and condition -->
+    <div class="row g-0 text-left">
+        <div class="col-sm-6 col-md-8">
+            <div class="baj">
+                <div class="card container mt-2 border-rounded border-black opacity-75 blur">
+                    <div class="container pt-3">
+                        <p class="fw-bold fs-3 text-center" data-aos="fade-right">Welcome to Plants App!</p>
+                        <div class="col-md-12 mb-4 p-3 fs-6" data-aos="fade-right">
+                            <p>These terms and conditions outline the rules and regulations for the use of Plants App's
+                                Website.
+                            </p>
+                            <p>By accessing this website we assume you accept these terms and conditions. Do not
+                                continue to use
+                                Plants
+                                App if you do not agree to take all of the terms and conditions stated on this page.</p>
+                        </div>
+                    </div>
+                    <div class="text-success" data-aos="fade-right">
+                        <hr class="border border-success border-2 opacity-75">
+                    </div>
+
+                    <div class="container pt-3">
+                        <p class="fw-bold fs-3 text-center" data-aos="fade-right">Terminology</p>
+                        <div class="col-md-12 mb-4 p-3 fs-6" data-aos="fade-right">
+                            <ul>
+                                <li>"Client", "You" and "Your" refers to you, the person using this website and
+                                    accepting the
+                                    Company’s terms and conditions.</li>
+                                <li>"The Company", "Ourselves", "We", "Our" and "Us", refers to our Company.</li>
+                                <li>"Party", "Parties", or "Us", refers to both the Client and ourselves.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="text-success" data-aos="fade-right">
+                        <hr class="border border-success border-2 opacity-75">
+                    </div>
+
+                    <div class="container pt-3">
+                        <p class="fw-bold fs-3 text-center" data-aos="fade-right">Cookies</p>
+                        <div class="col-md-12 mb-4 p-3 fs-6" data-aos="fade-right">
+                            <p>We employ the use of cookies. By accessing Plants App, you agreed to use cookies in
+                                agreement
+                                with
+                                the Plants App's Privacy Policy.</p>
+                        </div>
+                    </div>
+                    <div class="text-success" data-aos="fade-right">
+                        <hr class="border border-success border-2 opacity-75">
+                    </div>
+
+                    <div class="container pt-3">
+                        <p class="fw-bold fs-3 text-center" data-aos="fade-right">License</p>
+                        <div class="col-md-12 mb-4 p-3 fs-6" data-aos="fade-right">
+                            <p>Unless otherwise stated, Plants App and/or its licensors own the intellectual property
+                                rights for
+                                all
+                                material on this website. All intellectual property rights are reserved. You may access
+                                this
+                                from
+                                Plants App for your own personal use subjected to restrictions set in these terms and
+                                conditions.
+                            </p>
+                            <ul>
+                                <li>You must not:</li>
+                                <li>Republish material from Plants App</li>
+                                <li>Sell, rent or sub-license material from Plants App</li>
+                                <li>Reproduce, duplicate or copy material from Plants App</li>
+                                <li>Redistribute content from Plants App</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="text-success" data-aos="fade-right">
+                        <hr class="border border-success border-2 opacity-75">
+                    </div>
+
+                    <div class="container pt-3">
+                        <p class="fw-bold fs-3 text-center" data-aos="fade-right">User Comments</p>
+                        <div class="col-md-12 mb-4 p-3 fs-6" data-aos="fade-right">
+                            <p>Parts of this website offer users the opportunity to post and exchange opinions and
+                                information.
+                                Plants App does not filter, edit, publish or review Comments prior to their presence on
+                                the
+                                website.
+                                Comments do not reflect the views and opinions of Plants App, its agents and/or
+                                affiliates.
+                                Comments
+                                reflect the views and opinions of the person who posts their views and opinions.
+
+                                We reserve the right to monitor all Comments and to remove any Comments which can be
+                                considered
+                                inappropriate, offensive or causes breach of these Terms and Conditions.</p>
+                        </div>
+                    </div>
+                    <div class="text-success" data-aos="fade-right">
+                        <hr class="border border-success border-2 opacity-75">
+                    </div>
+
+                    <div class="container pt-3">
+                        <p class="fw-bold fs-3 text-center" data-aos="fade-right">Hyperlinking to Our Content</p>
+                        <div class="col-md-12 mb-4 p-3 fs-6" data-aos="fade-right">
+                            <p>Organizations may link to our website without prior written approval if the link:</p>
+                            <ul>
+                                <li>Is not in any way deceptive.</li>
+                                <li>Does not falsely imply sponsorship, endorsement or approval of the linking party and
+                                    its
+                                    products and/or services.</li>
+                                <li>Fits within the context of the linking party’s site.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="text-success" data-aos="fade-right">
+                        <hr class="border border-success border-2 opacity-75">
+                    </div>
+
+                    <div class="container pt-3">
+                        <p class="fw-bold fs-3 text-center" data-aos="fade-right">disclaimer</p>
+                        <div class="col-md-12 mb-4 p-3 fs-6" data-aos="fade-right">
+                            <p>To the maximum extent permitted by applicable law, we exclude all representations,
+                                warranties and
+                                conditions relating to our website and the use of this website. Nothing in this
+                                disclaimer will:
+                            </p>
+                            <ul>
+                                <li>Limit or exclude our or your liability for death or personal injury.</li>
+                                <li>Limit or exclude our or your liability for fraud or fraudulent misrepresentation.
+                                </li>
+                                <li>Limit any of our or your liabilities in any way that is not permitted under
+                                    applicable law.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="text-success" data-aos="fade-right">
+                        <hr class="border border-success border-2 opacity-75">
+                    </div>
+
+                    <div class="container pt-3">
+                        <p class="fw-bold fs-3 text-center" data-aos="fade-right"> Changes to These Terms</p>
+                        <div class="col-md-12 mb-4 p-3 fs-6" data-aos="fade-right">
+                            <p>We may revise these terms and conditions from time to time. By using this website, you
+                                are
+                                expected
+                                to review these terms on a regular basis.</p>
+                        </div>
+                    </div>
+                    <div class="text-success" data-aos="fade-right">
+                        <hr class="border border-success border-2 opacity-75">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- konten samping -->
+        <div class="col-6 col-md-4 mt-2 baj">
+            <!-- satu -->
+            <div class="card" data-aos="fade-down" style="width: 28rem; margin-left: 10px;">
+                <img src="dandelion.jpg" class="card-img-top" alt="...">
+                <div class="card-body border-rounded opacity-75 blur">
+                    <p class="card-text">Dandelion or Randa Tapak is a large genus in the Asteraceae family. The name
+                        Randa Tapak itself usually refers to a plant that has small "flowers" that can fly when blown by
+                        the wind. The original origin of this plant is Europe and Asia, but it has spread to all places.
+                    </p>
+                </div>
+            </div>
+            <!-- dua -->
+            <div class="card mt-2" data-aos="fade-down" style="width: 28rem; margin-left: 10px;">
+                <img src="tulip.jpg" class="card-img-top" alt="...">
+                <div class="card-body border-rounded opacity-75 blur">
+                    <p class="card-text">Yellow tulips are a variety of tulip known for their bright, sunny yellow
+                        petals. They are a popular choice for gardens and bouquets, and they are often associated with
+                        happiness, joy, and optimism. Some even believe that yellow tulips symbolize good luck and
+                        prosperity. </p>
+                </div>
+            </div>
+            <!-- tiga -->
+            <div class="card mt-2" data-aos="fade-down" style="width: 28rem; margin-left: 10px;">
+                <img src="Rose.jpg" class="card-img-top" alt="...">
+                <div class="card-body border-rounded opacity-75 blur">
+                    <p class="card-text">Roses, tusak or ros are shrubs, the trees have thorns, the flowers smell
+                        fragrant and are beautifully colored. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer mt-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <p class="copyright">&copy; Copyright 2022, Scindapsus Indonesia</p>
+                <ul class="d-flex align-items-center ms-auto" style="list-style-type: none;">
+                    <li class="li-r"><a href="#" class="text-white text-decoration-none"><i
+                                class="fa-brands fa-instagram" style="font-size: 18px;"></i></a></li>
+                    <li class="li-r"><a href="#" class="text-white text-decoration-none"><i
+                                class="fa-brands fa-whatsapp" style="font-size: 18px;"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

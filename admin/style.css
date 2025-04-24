@@ -1,0 +1,12 @@
+.bg-table {
+    background-color:#ffff;
+    color: green;
+}
+
+.delete {
+    color: red;
+}
+
+.fa-trash {
+    color: red;
+}

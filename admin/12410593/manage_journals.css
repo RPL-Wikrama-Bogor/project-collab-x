@@ -1,0 +1,33 @@
+.notification-wrapper {
+    position: relative;
+    display: inline-block;
+    font-family: sans-serif;
+  }
+
+  .badge-button {
+    background: #19C078;
+    color: black;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .badge-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    width: 22px;
+    height: 22px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0 2px white;
+  }

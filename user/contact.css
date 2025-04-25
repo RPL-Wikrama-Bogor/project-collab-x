@@ -1,0 +1,236 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+/* Navbar */
+.navbar {
+    padding: 0 2rem;
+    background-color: #fff;
+}
+
+.navbar .navbar-nav {
+    margin-bottom: 1rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.25rem rgb(25 192 120 / 50%) !important;
+}
+
+.navbar-light {
+    background: #fff !important;
+}
+
+.nav-link {
+    color: #000 !important;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #19C078 !important;
+}
+
+.nav-item .dropdown-menu {
+    padding: 0 20px;
+    border-bottom: 4px solid #19C078;
+}
+
+.nav-item .dropdown-item {
+    padding: 10px 0;
+}
+
+.nav-item .dropdown-item.border-b {
+    border-bottom: 1px solid #D8D8D8;
+}
+
+/* Hero Banner */
+.banner {
+    background-color: #19C078;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+}
+
+.page-heading {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.page-heading-primary {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.page-heading-secondary {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+/* About Section */
+.about {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.about h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #263238;
+}
+
+.about p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Footer */
+.footer {
+    background: #263238;
+    color: #fff;
+    padding: 30px 3rem;
+    text-align: center;
+}
+
+.footer .copyright {
+    font-size: 14px;
+}
+
+.footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer ul li {
+    margin-right: 15px;
+}
+
+.footer ul li a {
+    color: #fff;
+    font-size: 18px;
+}
+
+.footer ul li a:hover {
+    color: #19C078;
+}
+
+/* Button Styles */
+.btn-success.gradient {
+    background-image: linear-gradient(to right, #4FDF85 50%, #19C078 100%);
+    transition: 0.5s;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    padding: 5px 20px;
+}
+
+.btn-outline-success:hover {
+    color: white;
+    background-color: #19C078;
+}
+
+/* Register Section */
+.section-regis {
+    background: #19C078;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 80px;
+}
+
+.regis-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.regis-content .textBox {
+    color: #fff;
+    max-width: 600px;
+}
+
+.regis-content .textBox h2 {
+    font-size: 2.8em;
+    line-height: 1.4em;
+    font-weight: 600;
+}
+
+.regis-content .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px 20px;
+    background-color: #fff;
+    color: #19C078;
+    border-radius: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.regis-content .imgBox img {
+    width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .about h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-regis {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 535px) {
+    .regis-content {
+        flex-direction: column;
+    }
+
+    .regis-content .textBox,
+    .regis-content .imgBox {
+        width: 100%;
+    }
+
+    .regis-content .imgBox img {
+        width: 80%;
+    }
+}
+
+/* Swiper Slider */
+.swiper-pagination-bullet-active {
+    background-color: #19C078 !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: #FFFFFF99;
+    border-radius: 50%;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none;
+}

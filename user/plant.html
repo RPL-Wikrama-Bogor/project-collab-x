@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>My Plant Collection</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    body {
+      background-color: #e9f7e3;
+      padding-top: 90px;
+    }
+
+    .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    .card-title {
+      color: #2e8b57;
+      font-weight: bold;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin: 30px 0;
+      color: #2e8b57;
+    }
+    .navbar{
+      background-color: white;
+      box-shadow: 0 2px 4px black;
+    }
+    .navbar-nav {
+  margin-right: 20px;
+}
+
+.dropdown-menu {
+    max-width: 250px;
+    width: max-content;
+    word-wrap: break-word;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .dropdown-menu-end {
+    right: 0;
+    left: auto;
+  }
+  @media (max-width: 576px) {
+    .dropdown-menu {
+      left: auto !important;
+      right: 0 !important;
+      max-width: 90vw;
+    }
+  }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light pt-3">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#" style="width: 60px;">
+                <img src="../assets/img/user-page/logo-text.svg" alt="">
+            </a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-bar"
+                aria-controls="navbar-bar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse float-right" id="navbar-bar">
+                <ul class="navbar-nav align-items-center ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Plants
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item border-b" href="#">Learn About Plants App</a></li>
+                            <li><a class="dropdown-item border-b" href="#">Process to Register</a></li>
+                            <li><a class="dropdown-item border-b" href="#">Terms And Conditions</a></li>
+                            <li><a class="dropdown-item" href="#">FAQs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Gallery
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item border-b" href="plant.html">Plant Collection</a></li>
+                            <li><a class="dropdown-item border-b" href="#">Popular Plants</a></li>
+                            <li><a class="dropdown-item border-b" href="#">Videos & Documentations</a></li>
+                            <li><a class="dropdown-item" href="#">Plant-based art</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Journals
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item border-b" href="#">Create</a></li>
+                            <li><a class="dropdown-item" href="#">Search</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ContactUs</a>
+                    </li>
+                    <!-- after login -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link profile dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user"></i>
+                            Halo, Fema!
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item border-b" href="#">Profile</a></li>
+                            <li><a class="dropdown-item border-b" href="#">My Plant</a></li>
+                            <li><a class="dropdown-item border-b" href="#">Reset Password</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item btn-nav">
+                        <div class="d-flex">
+                            <a class="btn btn-outline-success">Sign In</a>
+                            <a class="btn btn-green" style="margin-left: 10px;">Sign Up</a>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+
+  <div class="container">
+    <h2 class="section-title">🌿 My Plant Collection 🌿</h2>
+    <div class="row justify-content-center g-4">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="monstera.jpeg" class="card-img-top" alt="Monstera Deliciosa">
+          <div class="card-body text-center">
+            <h5 class="card-title">Monstera Deliciosa</h5>
+            <p class="card-text">Tanaman tropis dengan daun berlubang unik. Cocok untuk dekorasi dalam ruangan.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="sukulen.jpeg" class="card-img-top" alt="Succulent">
+          <div class="card-body text-center">
+            <h5 class="card-title">Succulent</h5>
+            <p class="card-text">Tanaman kecil yang mudah dirawat dan cocok untuk pemula.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="download (3).jpeg" class="card-img-top" alt="Kaktus">
+          <div class="card-body text-center">
+            <h5 class="card-title">Kaktus</h5>
+            <p class="card-text">Tahan panas dan tidak perlu sering disiram. Pilihan populer untuk hiasan meja.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="download (4).jpeg" class="card-img-top" alt="Snake Plant">
+          <div class="card-body text-center">
+            <h5 class="card-title">Snake Plant</h5>
+            <p class="card-text">Tanaman tahan lama dan cocok untuk penyaring udara alami.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="download (5).jpeg" class="card-img-top" alt="Lucky Bamboo">
+          <div class="card-body text-center">
+            <h5 class="card-title">Lucky Bamboo</h5>
+            <p class="card-text">Dikenal sebagai pembawa keberuntungan. Mudah tumbuh di air.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="download (6).jpeg" class="card-img-top" alt="Pakis">
+          <div class="card-body text-center">
+            <h5 class="card-title">Pakis</h5>
+            <p class="card-text">Tanaman rimbun yang cocok diletakkan di tempat teduh dan lembap.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-end">
+      <li class="page-item disabled">
+        <ul class="pagination justify-content-end my-4">
+        <a class="page-link" href="#" tabindex="-1">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+
+</body>
+</html>

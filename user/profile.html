@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+     <!-- google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+         rel="stylesheet">
+
+    <style>
+        body {
+            padding-top: 80px; /* Sesuaikan dengan tinggi navbar agar konten tidak ketutupan */
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #ffffff; /* putih */
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            font-family: 'Poppins', sans-serif;
+            z-index: 1000;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: auto; /* Navbar akan muncul di sisi kanan */
+        }
+
+        .navbar .nav-link {
+            color: #333333;
+            font-weight: 500;
+            padding: 8px 16px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .nav-link:hover,
+        .navbar .nav-link.active {
+            color: #198754; /* warna hijau atau sesuaikan */
+        }
+
+        .navbar .dropdown-menu {
+            border-radius: 0;
+            border: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+        }
+
+        .dropdown-item.border-b {
+            border-bottom: 1px solid #f1f1f1;
+        }
+
+        .dropdown-item:hover {
+            background-color: #f8f9fa;
+            color: #198754;
+        }
+
+        /* Profil icon */
+        .navbar .profile i {
+            margin-right: 6px;
+        }
+
+        /* Profile container */
+        .profile-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+        }
+
+        .profile-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px; 
+            object-fit: cover; /* Membuat gambar proporsional dan tidak terdistorsi */
+            object-position: center;
+        }
+
+        .custom-dropdown {
+            float: right;
+            padding: 10px;
+        }
+
+        /* Profile form */
+        .form-group label {
+            font-weight: bold;
+        }
+
+        .form-group input {
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .btn-primary {
+            background-color: #198754; /* Hijau */
+            border-color: #198754;
+        }
+
+        .btn-primary:hover {
+            background-color: #155d41; /* Warna hijau lebih gelap saat hover */
+            border-color: #155d41;
+        }
+    </style>
+</head>
+<body>
+
+     <div class="container">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light pt-3">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-bar"
+                    aria-controls="navbar-bar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse float-right" id="navbar-bar">
+                    <ul class="navbar-nav align-items-center ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Plants
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item border-b" href="#">Learn About Plants App</a></li>
+                                <li><a class="dropdown-item border-b" href="#">Process to Register</a></li>
+                                <li><a class="dropdown-item border-b" href="#">Terms And Conditions</a></li>
+                                <li><a class="dropdown-item" href="#">FAQs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Gallery
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item border-b" href="#">Plant Collection</a></li>
+                                <li><a class="dropdown-item border-b" href="#">Popular Plants</a></li>
+                                <li><a class="dropdown-item border-b" href="#">Videos & Documentations</a></li>
+                                <li><a class="dropdown-item" href="#">Plant-based art</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Journals
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item border-b" href="#">Create</a></li>
+                                <li><a class="dropdown-item" href="#">Search</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Community</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ContactUs</a>
+                        </li>
+                        <!-- after login -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link profile dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user"></i>
+                                Halo, Fema!
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
+                                <li><a class="dropdown-item border-b" href="#">Profile</a></li>
+                                <li><a class="dropdown-item border-b" href="#">My Plant</a></li>
+                                <li><a class="dropdown-item border-b" href="#">Reset Password</a></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+<div class="container profile-container">
+    <div class="col-md-8">
+        <div class="profile-header">
+            <img src="foto.jpeg" alt="User Image" class="profile-img">
+            <h5>Keysha Fatya Andrea</h5>
+            <p>Bogor</p>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" value="Keysha">
+            </div>
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" class="form-control" id="fullName" value="Keysha Fatya Andrea">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" value="Keysha@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" value="(+62) 85691879771">
+            </div>
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" class="form-control" id="location" placeholder="Bogor">
+            </div>
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+        </form>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

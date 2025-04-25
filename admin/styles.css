@@ -1,0 +1,27 @@
+.star-rating i {
+    color: #28a745; 
+  }
+  .review-box {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #fff;
+  }
+  .rating-bar .progress-bar {
+    background-color: #28a745;
+  }
+  .rating-summary {
+    background-color: #e9fbe9;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .btn-green {
+    background-color: #28a745;
+    color: white;
+    border: none;
+  }
+  .btn-green:hover {
+    background-color: #218838;
+  }
+  

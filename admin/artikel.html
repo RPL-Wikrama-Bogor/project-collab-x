@@ -1,28 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/dataTables.bootstrap5.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="artikel.css">
     <link rel="stylesheet" href="admin.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 
-    <title>Plants Dashboard</title>
+    <title>Article & News</title>
+
+    <style>
+
+        .card-pertama {
+            display: flex;
+            gap: 20px;
+            margin-top: 170px;
+            margin-left: 30px;
+            flex-wrap: wrap;
+        }
+    </style>
 </head>
-
 <body>
-
+    
     <div class="screen-cover d-none d-xl-none"></div>
 
     <div class="row">
         <div class="col-12 col-lg-3 col-navbar d-none d-xl-block">
-
             <aside class="sidebar">
                 <a href="#" class="sidebar-logo">
                     <div class="d-flex justify-content-start align-items-center">
@@ -258,7 +264,7 @@
                     <span>Article & News</span>
                 </a>
 
-                <a href="#" class="sidebar-item">
+                <a href="artikel.html" class="sidebar-item">
                     <svg width="200" height="300" xmlns="http://www.w3.org/2000/svg">
                         <!-- Shadow effect -->
                         <rect x="5" y="5" width="190" height="290" fill="rgba(0, 0, 0, 0.1)" rx="5" />
@@ -357,319 +363,159 @@
                 </a>
 
             </aside>
-
         </div>
 
-
-        <div class="col-12 col-xl-9">
-            <div class="nav">
-                <div class="d-flex justify-content-between align-items-center w-100 mb-3 mb-md-0">
-                    <div class="d-flex justify-content-start align-items-center">
-                        <button id="toggle-navbar" >
-                            <i class="fa-solid fa-question"></i>
-                        </button>
-                        <h2 class="nav-title">Overview</h2>
-                    </div>
-                    <button class="btn-notif d-block d-md-none"><i class="fa-solid fa-question"></i></button>
+        <div class="col-12 col-lg-9">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="content-title">Daftar Artikel</h2>
+                    <p class="content-desc">Kumpulan artikel seputar tanaman dan manfaatnya.</p>
+                  
+                    <table class="tables">
+                      <thead>
+                        <tr>
+                          <th>No</th>
+                          <th>Judul Artikel</th>
+                          <th>Deskripsi Singkat</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Manfaat Tanaman Lidah Buaya</td>
+                          <td>Artikel ini membahas berbagai manfaat lidah buaya, mulai dari kesehatan kulit hingga pengobatan alami.</td>
+                          <td>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                              Delete
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Action</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    ...
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Delete</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div></td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Cara Merawat Tanaman Hias di Dalam Rumah</td>
+                          <td>Tips dan trik merawat tanaman hias agar tetap segar dan indah meskipun berada di dalam ruangan.</td>
+                          <td>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                              Delete
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Action</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    ...
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Delete</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div></td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Jenis-Jenis Tanaman Obat Keluarga</td>
+                          <td>Penjelasan tentang berbagai jenis tanaman obat yang umum ditanam di pekarangan rumah.</td>
+                          <td>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                              Delete
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Action</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    ...
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Delete</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div></td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>Panduan Menanam Sayuran di Lahan Sempit</td>
+                          <td>Langkah-langkah praktis menanam sayuran di halaman kecil atau pot.</td>
+                          <td>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                              Delete
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Action</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    ...
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Delete</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div></td>
+                        </tr>
+                      </tbody>
+                    </table>
                 </div>
-
-                <div class="d-flex justify-content-between align-items-center nav-input-container">
-                    <div class="nav-input-group">
-                        <input type="text" class="nav-input" placeholder="Search people, team, project">
-                        <button class="btn-nav-input"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </div>
-
-                    <button class="btn-notif d-none d-md-block"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </div>
-            </div>
-
-            <div class="content">
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="content-title">Statistics</h2>
-                        <h5 class="content-desc mb-4">Your business growth</h5>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="statistics-card">
-
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="d-flex flex-column justify-content-between align-items-start">
-                                    <h5 class="content-desc">Employees</h5>
-
-                                    <h3 class="statistics-value">18,500,000</h3>
-                                </div>
-
-                                <button class="btn-statistics">
-                                    <i class="fa-solid fa-question"></i>
-                                </button>
-                            </div>
-
-                            <div class="statistics-list">
-                                <i class="fa-solid fa-question"></i>
-                                <i class="fa-solid fa-question"></i>
-                                <i class="fa-solid fa-question"></i>
-                                <i class="fa-solid fa-question"></i>
-                                <i class="fa-solid fa-question"></i>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="statistics-card">
-
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="d-flex flex-column justify-content-between align-items-start">
-                                    <h5 class="content-desc">Teams</h5>
-
-                                    <h3 class="statistics-value">122,000</h3>
-                                </div>
-
-                                <button class="btn-statistics">
-                                    <i class="fa-solid fa-question"></i>
-                                </button>
-                            </div>
-
-                            <div class="statistics-list">
-                                <div class="statistics-icon award">
-                                    <i class="fa-solid fa-question"></i>
-                                </div>
-                                <div class="statistics-icon globe">
-                                    <i class="fa-solid fa-question"></i>
-                                </div>
-                                <div class="statistics-icon target">
-                                    <i class="fa-solid fa-question"></i>
-                                </div>
-                                <div class="statistics-icon box">
-                                    <i class="fa-solid fa-question"></i>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="statistics-card">
-
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="d-flex flex-column justify-content-between align-items-start">
-                                    <h5 class="content-desc">Projects</h5>
-
-                                    <h3 class="statistics-value">150,000,000</h3>
-                                </div>
-
-                                <button class="btn-statistics">
-                                    <i class="fa-solid fa-question"></i>
-                                </button>
-                            </div>
-
-                            <div class="statistics-list">
-                                <div class="statistics-icon one">
-                                    <span>SK</span>
-                                </div>
-                                <div class="statistics-icon two">
-                                    <span>DW</span>
-                                </div>
-                                <div class="statistics-icon three">
-                                    <span>FJ</span>
-                                </div>
-                                <div class="statistics-icon four">
-                                    <span>AP</span>
-                                </div>
-                                <div class="statistics-icon five">
-                                    <span>ML</span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row mt-5">
-                    <div class="col-12 col-lg-6">
-                        <h2 class="content-title">Documents</h2>
-                        <h5 class="content-desc mb-4">Standard procedure</h5>
-
-                        <div class="document-card">
-                            <div class="document-item">
-                                <div class="d-flex justify-content-start align-items-center">
-                                    <div class="document-icon box">
-                                        <i class="fa-solid fa-question"></i>
-                                    </div>
-
-                                    <div class="d-flex flex-column justify-content-between align-items-start">
-                                        <h2 class="document-title">Customer Guide</h2>
-
-                                        <span class="document-desc">180 MB • PDF</span>
-                                    </div>
-                                </div>
-
-                                <button class="btn-statistics">
-                                    <i class="fa-solid fa-question"></i>
-                                </button>
-
-                            </div>
-
-                            <div class="document-item">
-                                <div class="d-flex justify-content-start align-items-center">
-                                    <div class="document-icon globe">
-                                        <i class="fa-solid fa-question"></i>
-                                    </div>
-
-                                    <div class="d-flex flex-column justify-content-between align-items-start">
-                                        <h2 class="document-title">Twitch Record</h2>
-
-                                        <span class="document-desc">700 GB • MP4</span>
-                                    </div>
-                                </div>
-
-                                <button class="btn-statistics">
-                                    <i class="fa-solid fa-question"></i>
-                                </button>
-
-                            </div>
-
-                            <div class="document-item">
-                                <div class="d-flex justify-content-start align-items-center">
-                                    <div class="document-icon database">
-                                        <i class="fa-solid fa-question"></i>
-                                    </div>
-
-                                    <div class="d-flex flex-column justify-content-between align-items-start">
-                                        <h2 class="document-title">Personas Datasets</h2>
-
-                                        <span class="document-desc">11 MB • CSV</span>
-                                    </div>
-                                </div>
-
-                                <button class="btn-statistics">
-                                    <i class="fa-solid fa-question"></i>
-                                </button>
-
-                            </div>
-
-                            <div class="document-item">
-                                <div class="d-flex justify-content-start align-items-center">
-                                    <div class="document-icon target">
-                                        <i class="fa-solid fa-question"></i>
-                                    </div>
-
-                                    <div class="d-flex flex-column justify-content-between align-items-start">
-                                        <h2 class="document-title">Marketing Book</h2>
-
-                                        <span class="document-desc">891 MB • PDF</span>
-                                    </div>
-                                </div>
-
-                                <button class="btn-statistics">
-                                    <i class="fa-solid fa-question"></i>
-                                </button>
-
-                            </div>
-
-
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-6">
-                        <h2 class="content-title">History</h2>
-                        <h5 class="content-desc mb-4">Track the flow</h5>
-
-                        <div class="document-card">
-                            <div class="document-item">
-                                <div class="d-flex justify-content-start align-items-center">
-
-                                    <div class="d-flex flex-column justify-content-between align-items-start">
-                                        <h2 class="document-title">Amalia Syahrina</h2>
-
-                                        <span class="document-desc">Promoted to Sr. Website Designer</span>
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                            <div class="document-item">
-                                <div class="d-flex justify-content-start align-items-center">
-
-                                    <div class="d-flex flex-column justify-content-between align-items-start">
-                                        <h2 class="document-title">Ah Park Yo</h2>
-
-                                        <span class="document-desc">Promoted to Front-End Developer</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="document-item">
-                                <div class="d-flex justify-content-start align-items-center">
-
-                                    <div class="d-flex flex-column justify-content-between align-items-start">
-                                        <h2 class="document-title">Sintia Siny</h2>
-
-                                        <span class="document-desc">Promoted to Accounting Executive</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="document-item">
-                                <div class="d-flex justify-content-start align-items-center">
-
-                                    <div class="d-flex flex-column justify-content-between align-items-start">
-                                        <h2 class="document-title">Jerami Putu</h2>
-
-                                        <span class="document-desc">Promoted to Quality Manager</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
+
     </div>
 
 
+              
 
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    <!--Datatable By Bootstrap-->
-    <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.11.4/js/dataTables.bootstrap5.min.js"></script>
-
-    <script>
-        const navbar = document.querySelector('.col-navbar')
-        const cover = document.querySelector('.screen-cover')
-
-        const sidebar_items = document.querySelectorAll('.sidebar-item')
-
-        function toggleNavbar() {
-            navbar.classList.toggle('d-none')
-            cover.classList.toggle('d-none')
-        }
-
-        function toggleActive(e) {
-            sidebar_items.forEach(function(v, k) {
-                v.classList.remove('active')
-            })
-            e.closest('.sidebar-item').classList.add('active')
-
-        }
-    </script>
-
-    <script>
-        $(document).ready(function() {
-            $('#manageUserTable').DataTable({
-                "info": false,
-                "bSort": false,
-            });
-        } );
-    </script>
 </body>
-
 </html>

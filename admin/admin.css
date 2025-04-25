@@ -638,6 +638,128 @@ aside #toggle-navbar {
   }
 }
 
+.accordion-button {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #56b859;
+  color: white;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: #56b859;
+}
+
+.checked {
+  color: orange;
+}
+
+.heading {
+  font-size: 25px;
+  margin-right: 25px;
+}
+
+h5{
+  text-align: center;
+  font-size: 30px;
+}
+
+.col p{
+  font-size: 18px;
+}
+
+.comment-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 1050;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .comment-box {
+      width: 90%;
+      max-width: 600px;
+      height: auto;
+      max-height: 90vh;
+      overflow-y: auto;
+  }
+  
+  .character-count {
+      text-align: right;
+      font-size: 0.8rem;
+      color: #6c757d;
+  }
+
+  .jumbotron {
+background: url('https://img.freepik.com/free-photo/flat-lay-tropical-leaves_23-2148817590.jpg?t=st=1743331178~exp=1743334778~hmac=f558b5bf51ae59d8e0ef1e1870b02a30a95c636809b9a0003e670ff71d32b52b&w=1380') no-repeat center center;
+background-size: cover;
+color: white;
+text-align: center;
+padding: 50px;
+margin-left: 320px;
+}
+.jumbotron h1 {
+font-weight: bold;
+background: rgba(0, 0, 0, 0.6);
+padding: 20px 40px;
+border-radius: 20px;
+}
+
+
+.review-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1050;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-box {
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+}
+
+.stars-container {
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.star {
+  color: #ddd;
+  cursor: pointer;
+  transition: color 0.2s;
+  margin: 0 5px;
+}
+
+.star:hover,
+.star.active {
+  color: #ffc107;
+}
+
+@media (max-width: 768px) {
+  .review-box {
+      width: 95%;
+  }
+  
+  .stars-container {
+      font-size: 1.8rem;
+  }
+=======
 #pop-logo{
   color: #2DB878;
 }

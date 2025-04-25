@@ -1,41 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plants App</title>
+    <title>User Profile</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <!-- google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+         rel="stylesheet">
 
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <style>
+        body {
+            padding-top: 80px; /* Sesuaikan dengan tinggi navbar agar konten tidak ketutupan */
+        }
 
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        /* Navbar */
+        .navbar {
+            background-color: #ffffff; /* putih */
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            font-family: 'Poppins', sans-serif;
+            z-index: 1000;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: auto; /* Navbar akan muncul di sisi kanan */
+        }
 
-    <!-- custom css -->
-    <link rel="stylesheet" href="user.css">
-    <link rel="stylesheet" href="about.css">
+        .navbar .nav-link {
+            color: #333333;
+            font-weight: 500;
+            padding: 8px 16px;
+            transition: color 0.3s ease;
+        }
 
+        .navbar .nav-link:hover,
+        .navbar .nav-link.active {
+            color: #198754; /* warna hijau atau sesuaikan */
+        }
+
+        .navbar .dropdown-menu {
+            border-radius: 0;
+            border: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+        }
+
+        .dropdown-item.border-b {
+            border-bottom: 1px solid #f1f1f1;
+        }
+
+        .dropdown-item:hover {
+            background-color: #f8f9fa;
+            color: #198754;
+        }
+
+        /* Profil icon */
+        .navbar .profile i {
+            margin-right: 6px;
+        }
+
+        /* Profile container */
+        .profile-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+        }
+
+        .profile-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px; 
+            object-fit: cover; /* Membuat gambar proporsional dan tidak terdistorsi */
+            object-position: center;
+        }
+
+        .custom-dropdown {
+            float: right;
+            padding: 10px;
+        }
+
+        /* Profile form */
+        .form-group label {
+            font-weight: bold;
+        }
+
+        .form-group input {
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .btn-primary {
+            background-color: #198754; /* Hijau */
+            border-color: #198754;
+        }
+
+        .btn-primary:hover {
+            background-color: #155d41; /* Warna hijau lebih gelap saat hover */
+            border-color: #155d41;
+        }
+    </style>
 </head>
-
 <body>
 
-    <div class="container">
+     <div class="container">
         <nav class="navbar navbar-expand-lg fixed-top navbar-light pt-3">
             <div class="container-fluid">
-                <!-- <a class="navbar-brand" href="#" style="width: 60px;">
-                    <img src="../assets/img/user-page/logo-text.svg" alt="">
-                </a> -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-bar"
                     aria-controls="navbar-bar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -105,67 +184,48 @@
                                 <li><a class="dropdown-item" href="#">Logout</a></li>
                             </ul>
                         </li>
-                        <!-- <li class="nav-item btn-nav">
-                            <div class="d-flex">
-                                <a class="btn btn-outline-success">Sign In</a>
-                                <a class="btn btn-green" style="margin-left: 10px;">Sign Up</a>
-                            </div>
-                        </li> -->
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
 
-
-    <!-- Banner -->
-    <div class="banner">
-        <div class="header">
-            <h1 class="page-heading">
-                <span class="page-heading-primary">What is a cultivar ?</span>
-                <span class="page-heading-secondary">A cultivar, as a taxon, is an assemblage of plants that
-                    has been selected <br> for a particular characteristic 
-                    <br><br>
-                    #theheartofindonesia</span>
-            </h1>
+<div class="container profile-container">
+    <div class="col-md-8">
+        <div class="profile-header">
+            <img src="foto.jpeg" alt="User Image" class="profile-img">
+            <h5>Keysha Fatya Andrea</h5>
+            <p>Bogor</p>
         </div>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" value="Keysha">
+            </div>
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" class="form-control" id="fullName" value="Keysha Fatya Andrea">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" value="Keysha@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" value="(+62) 85691879771">
+            </div>
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" class="form-control" id="location" placeholder="Bogor">
+            </div>
+            <button type="submit" class="btn btn-primary">Save Changes</button>
+        </form>
     </div>
-    <!-- End Banner -->
+</div>
 
-
-    <div class="container about py-5">
-        <h2>Plants App</h2>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus dolore, delectus natus eos deserunt dignissimos cupiditate pariatur, velit veritatis suscipit similique optio at dolorum placeat atque voluptatum vero officiis doloremque?
-
-            <br><br>
-
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eius veritatis libero architecto sunt ipsum fuga, aspernatur a velit cumque. Animi minima quia temporibus vero eligendi deleniti assumenda sed eum?
-        </p>
-    </div>
-
-    <div class="footer">
-        <div class="d-flex justify-content-between align-items-center">
-            <p class="copyright">&copy; Copyright 2022, Scindapsus Indonesia</p>
-            <ul class="d-flex align-items-center ms-auto" style="list-style-type: none;">
-                <li class="li-r"><a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-instagram"
-                            style="font-size: 18px;"></i></a></li>
-                <li class="li-r"><a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-whatsapp"
-                            style="font-size: 18px;"></i></a></li>
-            </ul>
-        </div>
-    </div>
-
-
-
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
-
 </html>

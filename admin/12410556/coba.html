@@ -1,23 +1,94 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/dataTables.bootstrap5.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <link rel="stylesheet" href="../admin.css">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/dataTables.bootstrap5.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+                body {
+                    font-family: 'Arial', sans-serif; /* You can change this to a Google Font */
+                    background-color: #f4f4f4; /* Light background for contrast */
+                    }
 
-    <link rel="stylesheet" href="admin.css">
+                .hero {
+                    background-color: #19C078;
+                    color: white;
+                    padding: 60px 20px;
+                    text-align: center;
+                    border-radius: 10px; /* Rounded corners */
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
+                    }
 
-    <title>Plants Dashboard</title>
+                .hero h1 {
+                    color: white;
+                    font-family: 'Poppins', sans-serif; /* Use a modern font */
+                    font-size: 3em; /* Larger font size */
+                    margin-bottom: 10px; /* Space below title */
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+                    }
+
+                .hero p {
+                    color: white;
+                    font-family: 'Arial', sans-serif; /* Use a clean font */
+                    font-size: 1.2em; /* Slightly larger font size */
+                    margin-top: 0; /* Remove top margin */
+                    opacity: 0.9; /* Slightly transparent for a softer look */
+                    }
+
+                .container {
+                    max-width: 800px; /* Center the container */
+                    margin: 0 auto; /* Center alignment */
+                    padding: 20px;
+                }
+
+                h3 {
+                    margin-bottom: 20px; /* Space below the heading */
+                }
+
+                .user-card {
+                display: block; /* Make the anchor tag behave like a block element */
+                text-decoration: none; /* Remove underline from links */
+                color: inherit; /* Inherit text color from parent */
+                margin-bottom: 15px;
+                border-radius: 10px; /* Rounded corners */
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+                transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover effect */
+                }
+
+                .user-card:hover {
+                transform: scale(1.02); /* Slightly enlarge on hover */
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+                }
+
+                .card-body {
+                    padding: 20px; /* More padding for better spacing */
+                }
+
+                .card-title {
+                    font-size: 1.5em; /* Larger title */
+                    margin-bottom: 10px; /* Space below title */
+                }
+
+                .card-text {
+                    font-size: 1em; /* Standard text size */
+                    color: #666; /* Slightly muted text color */
+                }
+        </style>
+    
+        <title>Plants Dashboard</title>
 </head>
 
 <body>
-
+    
     <div class="screen-cover d-none d-xl-none"></div>
 
     <div class="row">
@@ -46,7 +117,7 @@
                         <path d="M10 3H3V10H10V3Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
 
-                    <span href ="index.html" class="sidebar-item-text">Dashboard</span>
+                    <span>Dashboard</span>
                 </a>
 
                 <h5 class="sidebar-title">Plant Management</h5>
@@ -94,9 +165,22 @@
                     <span>Plant Data</span>
                 </a>
 
-                <a href="12410521/set-popular-items.html" class="sidebar-item" style="display: flex; align-items: center; gap: 16px;">
-                    <i class="fa-solid fa-ranking-star" id="pop-logo"></i>
-                    <span id="pop-items">Set Popular Items</span>
+                <a href="#" class="sidebar-item">
+                    <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Trophy base -->
+                        <rect x="70" y="150" width="60" height="10" fill="gray" />
+                        
+                        <!-- Trophy cup -->
+                        <path d="M100,30 C130,30 150,50 150,80 L150,120 L50,120 L50,80 C50,50 70,30 100,30 Z" fill="lightgray" stroke="gray" stroke-width="2" />
+                        
+                        <!-- Trophy handles -->
+                        <path d="M50,80 C30,70 30,90 50,100" fill="none" stroke="gray" stroke-width="2" />
+                        <path d="M150,80 C170,70 170,90 150,100" fill="none" stroke="gray" stroke-width="2" />
+                        
+                        <!-- Optional: Add a label -->
+                        <text x="100" y="180" font-family="Arial" font-size="16" text-anchor="middle" fill="gray">Rank 1</text>
+                    </svg>
+                    <span>Set Popular Items</span>
                 </a>
 
                 <a href="#" class="sidebar-item">
@@ -112,7 +196,7 @@
 
                 <h5 class="sidebar-title">Community</h5>
 
-                <a href="12410532/SM.html" class="sidebar-item">
+                <a href="#" class="sidebar-item">
                     <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                         <!-- Building -->
                         <rect x="50" y="70" width="100" height="100" fill="lightgray" stroke="gray" stroke-width="2" />
@@ -134,7 +218,7 @@
                     <span>Structural & Member</span>
                 </a>
 
-                <a href="12410542/comments.html" class="sidebar-item">
+                <a href="#" class="sidebar-item">
                     <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                         <!-- Speech bubble -->
                         <path d="M20 20 h160 a20 20 0 0 1 20 20 v100 a20 20 0 0 1 -20 20 h-130 l-30 30 v-30 h-20 a20 20 0 0 1 -20 -20 v-100 a20 20 0 0 1 20 -20 z" fill="lightgray" stroke="gray" stroke-width="2" />
@@ -145,7 +229,7 @@
                     <span>Comments & Reviews</span>
                 </a>
 
-                <a href="../admin/12410543/event.html" class="sidebar-item">
+                <a href="#" class="sidebar-item">
                     <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                         <!-- Calendar base -->
                         <rect x="30" y="40" width="140" height="130" fill="lightgray" stroke="gray" stroke-width="2" rx="10" ry="10" />
@@ -179,7 +263,7 @@
                     <span>Events/Activities</span>
                 </a>
 
-                <a href="index1.html" class="sidebar-item">
+                <a href="#" class="sidebar-item">
                     <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                         <!-- Location pin -->
                         <path d="M100,10 C130,10 160,40 160,70 C160,110 100,190 100,190 C100,190 40,110 40,70 C40,40 70,10 100,10 Z" fill="lightgray" stroke="gray" stroke-width="2" />
@@ -201,7 +285,7 @@
                     <span>User Data</span>
                 </a>
 
-                <a href="12410556/coba.html" class="sidebar-item">
+                <a href="" class="sidebar-item">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="#ABB3C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="#ABB3C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -226,7 +310,7 @@
                 </a>
 
                 <h5 class="sidebar-title">Content & Publications</h5>
-                <a href="12410588/articlenews.html" class="sidebar-item">
+                <a href="#" class="sidebar-item">
                     <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                         <!-- Document shape -->
                         <rect x="40" y="20" width="120" height="160" rx="10" ry="10" fill="lightgray" stroke="gray" stroke-width="2" />
@@ -255,7 +339,7 @@
                     <span>Manage Journals</span>
                 </a>
 
-                <a href="12410645/gallery.html" class="sidebar-item">
+                <a href="#" class="sidebar-item">
                     <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                         <!-- Outer frame -->
                         <rect x="10" y="10" width="180" height="180" fill="lightgray" stroke="gray" stroke-width="4" rx="10" ry="10" />
@@ -321,7 +405,7 @@
                     <span>Account Setting</span>
                 </a>
 
-                <a href="12410732/message.html" class="sidebar-item">
+                <a href="#" class="sidebar-item">
                     <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                         <!-- Speech bubble -->
                         <path d="M20 20 h160 a20 20 0 0 1 20 20 v100 a20 20 0 0 1 -20 20 h-130 l-30 30 v-30 h-20 a20 20 0 0 1 -20 -20 v-100 a20 20 0 0 1 20 -20 z" fill="lightblue" stroke="blue" stroke-width="2" />
@@ -332,7 +416,7 @@
                     <span>Message</span>
                 </a>
 
-               
+                <a href="#" class="sidebar-item">
 
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M16 17L21 12L16 7" stroke="#ABB3C4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -343,287 +427,49 @@
                     <span>Logout</span>
                 </a>
 
-                <a href="" class="sidebar-item">
-                    copyright 2025
-                </a>
-
             </aside>
 
         </div>
-
-
         <div class="col-12 col-xl-9">
-            <div class="nav">
-                <div class="d-flex justify-content-between align-items-center w-100 mb-3 mb-md-0">
-                    <div class="d-flex justify-content-start align-items-center">
-                        <button id="toggle-navbar" >
-                            <i class="fa-solid fa-question"></i>
-                        </button>
-                        <h2 class="nav-title">Overview</h2>
-                    </div>
-                    <button class="btn-notif d-block d-md-none"><i class="fa-solid fa-question"></i></button>
-                </div>
 
-                <div class="d-flex justify-content-between align-items-center nav-input-container">
-                    <div class="nav-input-group">
-                        <input type="text" class="nav-input" placeholder="Search people, team, project">
-                        <button class="btn-nav-input"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </div>
-
-                    <button class="btn-notif d-none d-md-block"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </div>
+            <div class="hero">
+                <h1><i class="fa-solid fa-users"></i> Online Users</h1>
+                <p>Pantau para user yang sedang online!</p>
             </div>
-
-            <div class="content">
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="content-title">Statistics</h2>
-                        <h5 class="content-desc mb-4">Your business growth</h5>
+            
+            <div class="container mt-4">
+                <h3>Users Currently Online</h3>
+                <a href="user/UserActivity1.html" class="card user-card">
+                    <div class="card-body">
+                        <h5 class="card-title">User  1</h5>
+                        <p class="card-text">Last active: 10 minutes ago</p>
                     </div>
-
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="statistics-card">
-
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="d-flex flex-column justify-content-between align-items-start">
-                                    <h5 class="content-desc">Employees</h5>
-
-                                    <h3 class="statistics-value">18,500,000</h3>
-                                </div>
-
-                                <button class="btn-statistics">
-                                    <i class="fa-solid fa-question"></i>
-                                </button>
-                            </div>
-
-                            <div class="statistics-list">
-                                <i class="fa-solid fa-question"></i>
-                                <i class="fa-solid fa-question"></i>
-                                <i class="fa-solid fa-question"></i>
-                                <i class="fa-solid fa-question"></i>
-                                <i class="fa-solid fa-question"></i>
-                            </div>
-
-                        </div>
+                </a>
+                <a href="user/UserActivty2.html" class="card user-card">
+                    <div class="card-body">
+                        <h5 class="card-title">User  2</h5>
+                        <p class="card-text">Last active: 15 minutes ago</p>
                     </div>
-
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="statistics-card">
-
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="d-flex flex-column justify-content-between align-items-start">
-                                    <h5 class="content-desc">Teams</h5>
-
-                                    <h3 class="statistics-value">122,000</h3>
-                                </div>
-
-                                <button class="btn-statistics">
-                                    <i class="fa-solid fa-question"></i>
-                                </button>
-                            </div>
-
-                            <div class="statistics-list">
-                                <div class="statistics-icon award">
-                                    <i class="fa-solid fa-question"></i>
-                                </div>
-                                <div class="statistics-icon globe">
-                                    <i class="fa-solid fa-question"></i>
-                                </div>
-                                <div class="statistics-icon target">
-                                    <i class="fa-solid fa-question"></i>
-                                </div>
-                                <div class="statistics-icon box">
-                                    <i class="fa-solid fa-question"></i>
-                                </div>
-                            </div>
-
-                        </div>
+                </a>
+                <a href="user/UserActivty3.html" class="card user-card">
+                    <div class="card-body">
+                        <h5 class="card-title">User  3</h5>
+                        <p class="card-text">Last active: 20 minutes ago</p>
                     </div>
-
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="statistics-card">
-
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="d-flex flex-column justify-content-between align-items-start">
-                                    <h5 class="content-desc">Projects</h5>
-
-                                    <h3 class="statistics-value">150,000,000</h3>
-                                </div>
-
-                                <button class="btn-statistics">
-                                    <i class="fa-solid fa-question"></i>
-                                </button>
-                            </div>
-
-                            <div class="statistics-list">
-                                <div class="statistics-icon one">
-                                    <span>SK</span>
-                                </div>
-                                <div class="statistics-icon two">
-                                    <span>DW</span>
-                                </div>
-                                <div class="statistics-icon three">
-                                    <span>FJ</span>
-                                </div>
-                                <div class="statistics-icon four">
-                                    <span>AP</span>
-                                </div>
-                                <div class="statistics-icon five">
-                                    <span>ML</span>
-                                </div>
-                            </div>
-
-                        </div>
+                </a>
+                <a href="user/UserActivty4.html" class="card user-card">
+                    <div class="card-body">
+                        <h5 class="card-title">User  4</h5>
+                        <p class="card-text">Last active: 30 minutes ago</p>
                     </div>
-
-                </div>
-
-                <div class="row mt-5">
-                    <div class="col-12 col-lg-6">
-                        <h2 class="content-title">Documents</h2>
-                        <h5 class="content-desc mb-4">Standard procedure</h5>
-
-                        <div class="document-card">
-                            <div class="document-item">
-                                <div class="d-flex justify-content-start align-items-center">
-                                    <div class="document-icon box">
-                                        <i class="fa-solid fa-question"></i>
-                                    </div>
-
-                                    <div class="d-flex flex-column justify-content-between align-items-start">
-                                        <h2 class="document-title">Customer Guide</h2>
-
-                                        <span class="document-desc">180 MB • PDF</span>
-                                    </div>
-                                </div>
-
-                                <button class="btn-statistics">
-                                    <i class="fa-solid fa-question"></i>
-                                </button>
-
-                            </div>
-
-                            <div class="document-item">
-                                <div class="d-flex justify-content-start align-items-center">
-                                    <div class="document-icon globe">
-                                        <i class="fa-solid fa-question"></i>
-                                    </div>
-
-                                    <div class="d-flex flex-column justify-content-between align-items-start">
-                                        <h2 class="document-title">Twitch Record</h2>
-
-                                        <span class="document-desc">700 GB • MP4</span>
-                                    </div>
-                                </div>
-
-                                <button class="btn-statistics">
-                                    <i class="fa-solid fa-question"></i>
-                                </button>
-
-                            </div>
-
-                            <div class="document-item">
-                                <div class="d-flex justify-content-start align-items-center">
-                                    <div class="document-icon database">
-                                        <i class="fa-solid fa-question"></i>
-                                    </div>
-
-                                    <div class="d-flex flex-column justify-content-between align-items-start">
-                                        <h2 class="document-title">Personas Datasets</h2>
-
-                                        <span class="document-desc">11 MB • CSV</span>
-                                    </div>
-                                </div>
-
-                                <button class="btn-statistics">
-                                    <i class="fa-solid fa-question"></i>
-                                </button>
-
-                            </div>
-
-                            <div class="document-item">
-                                <div class="d-flex justify-content-start align-items-center">
-                                    <div class="document-icon target">
-                                        <i class="fa-solid fa-question"></i>
-                                    </div>
-
-                                    <div class="d-flex flex-column justify-content-between align-items-start">
-                                        <h2 class="document-title">Marketing Book</h2>
-
-                                        <span class="document-desc">891 MB • PDF</span>
-                                    </div>
-                                </div>
-
-                                <button class="btn-statistics">
-                                    <i class="fa-solid fa-question"></i>
-                                </button>
-
-                            </div>
-
-
-                        </div>
+                </a>
+                <a href="user/UserActivty5.html" class="card user-card">
+                    <div class="card-body">
+                        <h5 class="card-title">User  5</h5>
+                        <p class="card-text">Last active: 1 hour ago</p>
                     </div>
-
-                    <div class="col-12 col-lg-6">
-                        <h2 class="content-title">History</h2>
-                        <h5 class="content-desc mb-4">Track the flow</h5>
-
-                        <div class="document-card">
-                            <div class="document-item">
-                                <div class="d-flex justify-content-start align-items-center">
-
-                                    <div class="d-flex flex-column justify-content-between align-items-start">
-                                        <h2 class="document-title">Amalia Syahrina</h2>
-
-                                        <span class="document-desc">Promoted to Sr. Website Designer</span>
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                            <div class="document-item">
-                                <div class="d-flex justify-content-start align-items-center">
-
-                                    <div class="d-flex flex-column justify-content-between align-items-start">
-                                        <h2 class="document-title">Ah Park Yo</h2>
-
-                                        <span class="document-desc">Promoted to Front-End Developer</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="document-item">
-                                <div class="d-flex justify-content-start align-items-center">
-
-                                    <div class="d-flex flex-column justify-content-between align-items-start">
-                                        <h2 class="document-title">Sintia Siny</h2>
-
-                                        <span class="document-desc">Promoted to Accounting Executive</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="document-item">
-                                <div class="d-flex justify-content-start align-items-center">
-
-                                    <div class="d-flex flex-column justify-content-between align-items-start">
-                                        <h2 class="document-title">Jerami Putu</h2>
-
-                                        <span class="document-desc">Promoted to Quality Manager</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
+                </a>
             </div>
-        </div>
-    </div>
-
-
 
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 
@@ -662,5 +508,4 @@
         } );
     </script>
 </body>
-
 </html>

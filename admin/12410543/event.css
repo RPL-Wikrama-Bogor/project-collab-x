@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+html, body {
+  font-family: "Poppins";
+  font-style: normal;
+  background-color: #F8F8FA;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.btn-statistics, .nav-input, .nav-input-group .btn-nav-input, .nav .btn-notif, #toggle-navbar {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.screen-cover {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: block;
+}
+
+#toggle-navbar {
+  margin-right: 15px;
+  display: block;
+}
+@media (min-width: 1200px) {
+  #toggle-navbar {
+    display: none;
+  }
+}
+
+aside {
+    background-color: #fff;
+    padding: 50px 24px;
+    padding-bottom: 250px;
+    height: 100vh;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  aside #toggle-navbar {
+    margin-left: 20px;
+  }
+  
+  .sidebar-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+  }
+  @media (min-width: 1200px) {
+    .sidebar-logo {
+      padding: 0 24px;
+      justify-content: center;
+    }
+  }
+  .sidebar-logo span {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 30px;
+    color: #121F3E;
+    margin-left: 16px;
+  }
+  .sidebar-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ABB3C4;
+    margin-top: 40px;
+    margin-bottom: 12px;
+  }
+  .sidebar-item {
+    text-decoration: none;
+    display: block;
+    background: transparent;
+    height: 46px;
+    border-radius: 16px;
+    padding: 0 11px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .sidebar-item.active {
+    background: #19C078;
+  }
+  .sidebar-item.active span {
+    color: #fff;
+  }
+  .sidebar-item.active svg path {
+    stroke: #fff;
+  }
+  .sidebar-item svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 20px;
+  }
+  .sidebar-item svg path {
+    stroke: #ABB3C4;
+  }
+  .sidebar-item span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    color: #121F3E;
+  }
+
+  
+  .main-content {
+    margin-left: 270px;
+    padding:50px;
+  }
+
+  .main-content h2 {
+    font-weight: 700;
+    color: #121F3E;
+  }
+  
+  .main-content h5 {
+    font-weight: 500;
+    color: #121F3E;
+    font-size: 20px;
+  }
+
+  
+

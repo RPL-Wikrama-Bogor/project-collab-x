@@ -1,0 +1,99 @@
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background: #39dd96;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        background: #d9f99d;
+        width: 450px;
+        padding: 2rem;
+        margin: 20px;
+        border-radius: 15px;
+      }
+      .form-title {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 1.3rem;
+        margin-bottom: 1rem;
+        color: #1b5e20;
+      }
+      
+      input {
+        width: 100%;
+        background-color: transparent;
+        border: 2px solid #a5d6a7;
+        padding: 10px 15px;
+        font-size: 1rem;  
+        border-radius: 8px;
+        margin-top: 10px;
+        transition: 0.3s;
+      }
+      .input-group {
+        margin-bottom: 15px;
+        position: relative;
+      }
+      input:focus {
+        border-color: #388e3c;
+        outline: none;
+        background-color: #f1f8e9;
+      }
+      label {
+        color: #4e7d46;
+        position: absolute;
+        left: 15px;
+        top: -10px;
+        background-color: #d9f99d;
+        padding: 0 5px;
+        font-size: 0.9rem;
+      }
+      .btn {
+        font-size: 1.2rem;
+        padding: 10px;
+        border-radius: 8px;
+        border: none;
+        width: 100%;
+        background: #39dd96;
+        color: white;
+        cursor: pointer;
+        transition: 0.4s;
+      }
+      .btn:hover {
+        background: #05ea87;
+      }
+
+      .show-password { 
+        position: absolute; 
+        right: 10px; 
+        top: 57%; 
+        transform: translateY(-50%);
+        cursor: pointer;
+         }
+
+      .links {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+        font-weight: bold;
+        color: #1b5e20;
+      }
+      button {
+        background: none;
+        border: none;
+        color: #2e7d32;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      button:hover {
+        text-decoration: underline;
+      }

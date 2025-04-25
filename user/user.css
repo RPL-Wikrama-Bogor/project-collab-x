@@ -31,7 +31,7 @@
     background: transparent !important;
 }
 
-/* navbar */
+navbar
 .navbar {
     padding: 0 2rem;
 }
@@ -159,9 +159,8 @@
     .nav-item a.dropdown-toggle {
         text-align: center;
     }
-}
+} 
 
-/* hero */
 .slider-hero {
     width: 100%;
     height: 30rem;
@@ -246,8 +245,6 @@
     right: 30px;
 }
 
-/* cards */
-
 .card.item {
     border: none;
     background: transparent !important;
@@ -291,7 +288,6 @@
     padding-top: 15px;
 }
 
-/* registration  */
 
 .section-regis {
     background: #19C078;
@@ -416,7 +412,7 @@
     }
 }
 
-/* swiper slider */
+swiper slider
 
 .section-slide {
     width: 100%;
@@ -487,9 +483,9 @@
   .slide-content{
     margin: 30px 10px;
   }
-  /*.swiper-navBtn{
+  .swiper-navBtn{
     display: none;
-  }*/
+  }
   .swiper-pagination-bullet{
     width: 10px;
     height: 10px;

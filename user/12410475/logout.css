@@ -5,7 +5,7 @@
         font-family: "Poppins", sans-serif;
       }
       body {
-        background: #39dd96;
+        background: linear-gradient(to bottom, #16A969, #128553);
         background-size: cover;
         background-repeat: no-repeat;
         min-height: 100vh;
@@ -65,13 +65,13 @@
         border-radius: 8px;
         border: none;
         width: 100%;
-        background: #39dd96;
+        background: linear-gradient(to bottom, #16A969, #128553);
         color: white;
         cursor: pointer;
         transition: 0.4s;
       }
       .btn:hover {
-        background: #05ea87;
+        background: linear-gradient(to bottom, #128553, #0f6b44);
       }
 
       .show-password { 

@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants App</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="PopularPlants.css">
+    <!-- <link rel="stylesheet" href="about.css"> -->
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-light fixed-top pt-3">
+                <div class="container-fluid">
+                    <!-- <a class="navbar-brand" href="#" style="width: 60px;">
+                        <img src="../assets/img/user-page/logo-text.svg" alt="">
+                    </a> -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-bar"
+                        aria-controls="navbar-bar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse float-right" id="navbar-bar">
+                        <ul class="navbar-nav align-items-center ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Plants
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item border-b" href="#">Learn About Plants App</a></li>
+                                    <div class="dropdown-divider"></div>
+                                    <li><a class="dropdown-item border-b" href="#">Process to Register</a></li>
+                                    <div class="dropdown-divider"></div>
+                                    <li><a class="dropdown-item border-b" href="#">Terms And Conditions</a></li>
+                                    <div class="dropdown-divider"></div>
+                                    <li><a class="dropdown-item" href="#">FAQs</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Gallery
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item border-b" href="#">Plant Collection</a></li>
+                                    <div class="dropdown-divider"></div>
+                                    <li><a class="dropdown-item border-b" href="12410241/PopularPlants.html">Popular Plants</a></li>
+                                    <div class="dropdown-divider"></div>
+                                    <li><a class="dropdown-item border-b" href="#">Videos & Documentations</a></li>
+                                    <div class="dropdown-divider"></div>
+                                    <li><a class="dropdown-item" href="#">Plant-based art</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">News</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Journals
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item border-b" href="#">Create</a></li>
+                                    <div class="dropdown-divider"></div>
+                                    <li><a class="dropdown-item" href="#">Search</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Community</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ContactUs</a>
+                            </li>
+                            <!-- after login -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link profile dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-user"></i>
+                                    Halo, Fema!
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item border-b" href="#">Profile</a></li>
+                                    <div class="dropdown-divider"></div>
+                                    <li><a class="dropdown-item border-b" href="#">My Plant</a></li>
+                                    <div class="dropdown-divider"></div>
+                                    <li><a class="dropdown-item border-b" href="#">Reset Password</a></li>
+                                    <div class="dropdown-divider"></div>
+                                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Popular Plants -->
+    <main>
+        <div class="container mt-5 pt-5 text-center">
+            <h1 class="fw-bold text-success mb-4">Popular Plants</h1>
+        </div>
+        <div class="container mt-4 d-flex justify-content-center flex-wrap gap-4">
+            <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img src="images/plants 12.jpeg" class="card-img-top plant-image" alt="Plants Tulips">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold">Plants Tulips</h5>
+                    <div class="text-center">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img src="images/plants 11.jpeg" class="card-img-top plant-image" alt="Plants Border Phlox">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold">Plants Border Phlox</h5>
+                    <div class="text-center">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img src="images/plants 9.jpeg" class="card-img-top plant-image" alt="Plants Anual Phlox">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold">Plants Anual Phlox</h5>
+                    <div class="text-center">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img src="images/plants 6.jpeg" class="card-img-top plant-image" alt="Plants Agastache">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold">Plants Agastache</h5>
+                    <div class="text-center">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img src="images/plants 5.jpeg" class="card-img-top plant-image" alt="Plants Agapanthus">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold">Plants Agapanthus</h5>
+                    <div class="text-center">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img src="images/plants 15.jpeg" class="card-img-top plant-image" alt="Plants Shrubby Potentillas">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold">Plants Shrubby Potentillas</h5>
+                    <div class="text-center">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img src="images/plants 17.jpeg" class="card-img-top plant-image" alt="Plants Magnolia">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold">Plants Magnolia</h5>
+                    <div class="text-center">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img src="images/plants 16.jpeg" class="card-img-top plant-image" alt="Plants Freesia">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold">Plants Freesia</h5>
+                    <div class="text-center">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img src="images/plants 10.jpeg" class="card-img-top plant-image" alt="Plants Aquilegia">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold">Plants Aquilegia</h5>
+                    <div class="text-center">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img src="images/plants 14.jpeg" class="card-img-top plant-image" alt="Plants Gardenia">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold">Plants Gardenia</h5>
+                    <div class="text-center">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img src="images/plants 13.jpeg" class="card-img-top plant-image" alt="Plants Annual and Biennial Salvias">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold">Plants Annual and Biennial Salvias</h5>
+                    <div class="text-center">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img src="images/plants 1.jpeg" class="card-img-top plant-image" alt="Plants Chrysanthemum">
+                <div class="card-body">
+                    <h5 class="card-title text-center fw-bold">Plants Chrysanthemum</h5>
+                    <div class="text-center">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <style>
+        .plant-image {
+            width: 100%; /* Full width of card */
+            height: 200px; /* Fixed height */
+            object-fit: cover; /* Ensure aspect ratio is maintained and image fills the space */
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</body>
+</html>

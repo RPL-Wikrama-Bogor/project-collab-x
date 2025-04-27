@@ -21,17 +21,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- custom css -->
-    <link rel="stylesheet" href="user.css">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="/user/user.css">
+    <link rel="stylesheet" href="/user/12410325/journal.css">
+    
 
 </head>
 
 <body>
+
     
-    <div class="container">
         <nav class="navbar navbar-expand-lg fixed-top navbar-light pt-3">
             <div class="container-fluid">
                 <!-- <a class="navbar-brand" href="#" style="width: 60px;">
@@ -44,7 +44,7 @@
                 <div class="collapse navbar-collapse float-right" id="navbar-bar">
                     <ul class="navbar-nav align-items-center ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#about.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="/user/about.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -52,7 +52,7 @@
                                 Plants
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item border-b" href="/project-collab-x/user/12410136/penjelasan.html">Learn About Plants App</a></li>
+                                <li><a class="dropdown-item border-b" href="#">Learn About Plants App</a></li>
                                 <li><a class="dropdown-item border-b" href="#">Process to Register</a></li>
                                 <li><a class="dropdown-item border-b" href="#">Terms And Conditions</a></li>
                                 <li><a class="dropdown-item" href="#">FAQs</a></li>
@@ -65,7 +65,7 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item border-b" href="#">Plant Collection</a></li>
-                                <li><a class="dropdown-item border-b" href="12410241/PopularPlants.html">Popular Plants</a></li>
+                                <li><a class="dropdown-item border-b" href="#">Popular Plants</a></li>
                                 <li><a class="dropdown-item border-b" href="#">Videos & Documentations</a></li>
                                 <li><a class="dropdown-item" href="#">Plant-based art</a></li>
                             </ul>
@@ -87,10 +87,10 @@
                             <a class="nav-link" href="#">Community</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="12410396/Event.html">Events</a>
+                            <a class="nav-link" href="#">Events</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="12410412/contact.html">ContactUs</a>
+                            <a class="nav-link" href="#">ContactUs</a>
                         </li>
                         <!-- after login -->
                         <li class="nav-item dropdown">
@@ -102,7 +102,7 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item border-b" href="#">Profile</a></li>
                                 <li><a class="dropdown-item border-b" href="#">My Plant</a></li>
-                                <li><a class="dropdown-item border-b" href="#" data-bs-toggle="modal" data-bs-target="#resetPasswordModal">Reset Password</a></li>
+                                <li><a class="dropdown-item border-b" href="#">Reset Password</a></li>
                                 <li><a class="dropdown-item" href="#">Logout</a></li>
                             </ul>
                         </li>
@@ -116,102 +116,113 @@
                 </div>
             </div>
         </nav>
-    </div>
+    
 
-    <!-- Model Dialog -->
-    <div class="modal fade" id="resetPasswordModal" tabindex="-1" aria-labelledby="resetPasswordModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="resetPasswordModalLabel">Confirm Password Reset</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
-                </div>
-                <div class="modal-body">
-                    Are you sure you want to reset your password?
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
-                    <a href="./12410462/index.html" class="btn btn-success">Continue</a>
+    <!-- Content -->
+<div class="container my-4">
+    
+    <!-- Start new document -->
+    <form class="d-flex flex-grow-1 mt-5">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    </form>
+    <h6 class="mb-3 mt-3">Create Journal</h6>
+    <div class="card text-center">
+        <div class="card-header">
+            Start New JOurnal
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Lorem, ipsum dolor.</h5>
+            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <div class="create-journal">
+                <button id="toggleFormBtn" class="btn btn-success">New Journal <br> + </a></button>
+                <div id="journal-form" class="hidden">
+                    <form action="">
+                        <div class="mb-3 mx-5">
+                            <label for="title" class="form-label">Judul Jurnal:</label>
+                            <input type="text" id="title" name="title" required class="form-control" />
+                        </div>
+
+                        <div class="mb-3 mx-5">
+                            <label for="date" class="form-label">Date</label>
+                            <input type="date" id="date" name="date" class="form-control" required />
+                        </div>
+
+                        <div class="mb-3 mx-5">
+                            <label for="content" class="form-label">Isi Jurnal:</label>
+                            <textarea id="content" name="content" class="form-control" rows="5" required></textarea>
+                        </div>
+
+                        <div class="mb-3 mx-5">
+                            <label for="image" class="form-label">Gambar Sampul:</label>
+                            <input type="file" id="image" name="image" class="form-control" accept="image/*" />
+                        </div>
+
+                        <div class="mb-3">
+                            <img id="previewImage" src="" class="img-thumbnail" style="max-width: 200px; display: none;" />
+                        </div>
+
+                        <button type="submit" class="btn btn-success">Upload</button>
+                    </form>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- Banner -->
-    <div class="banner">
-        <div class="header">
-            <h1 class="page-heading">
-                <span class="page-heading-primary">What is a cultivar ?</span>
-                <span class="page-heading-secondary">A cultivar, as a taxon, is an assemblage of plants that
-                    has been selected <br> for a particular characteristic 
-                    <br><br>
-                    #theheartofindonesia</span>
-            </h1>
+        <div class="card-footer text-body-secondary">
+            Lorem ipsum dolor sit amet.
         </div>
     </div>
-    <!-- End Banner -->
 
-
-    <div class="container about py-5">
-        <h2>Plants App</h2>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus dolore, delectus natus eos deserunt dignissimos cupiditate pariatur, velit veritatis suscipit similique optio at dolorum placeat atque voluptatum vero officiis doloremque?
-
-            <br><br>
-
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eius veritatis libero architecto sunt ipsum fuga, aspernatur a velit cumque. Animi minima quia temporibus vero eligendi deleniti assumenda sed eum?
-        </p>
+    <!-- Recent documents -->
+    <h6 class="my-3">Recent Journal</h6>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+        <div class="col">
+            <div class="recent-doc-thumbnail p-2 "style="height: 15rem;">
+                <img src="/user/12410325/img/….jpeg" class="w-100 h-100 object-fit-contain" alt="Doc">
+            </div>
+            <div class="doc-title">Jurnal Saya</div>
+            <small class="text-muted">Apr 10, 2025</small>
+        </div>
+        <div class="col">
+            <div class="recent-doc-thumbnail p-2" style="height: 15rem;">
+                <img src="/user/12410325/img/90456c70-c024-42b0-b99a-ee27a994af3c.jpeg" class="w-100 h-100 object-fit-contain" alt="Doc">
+            </div>
+            <div class="doc-title">Jurnal Ilmiah</div>
+            <small class="text-muted">Apr 10, 2025</small>
+        </div>
+        
     </div>
+</div>
 
 <div class="footer">
     <div class="d-flex justify-content-between align-items-center">
         <p class="copyright">&copy; Copyright 2022, Scindapsus Indonesia</p>
         <ul class="d-flex align-items-center ms-auto" style="list-style-type: none;">
-            <li class="li-r"><a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-instagram"
-                        style="font-size: 18px;"></i></a></li>
-            <li class="li-r"><a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-whatsapp"
-                        style="font-size: 18px;"></i></a></li>
+            <li class="li-r">
+                <a href="#" class="text-white text-decoration-none">
+                    <i class="fa-brands fa-instagram" style="font-size: 18px;"></i>
+                </a>
+            </li>
+            <li class="li-r">
+                <a href="#" class="text-white text-decoration-none">
+                    <i class="fa-brands fa-whatsapp" style="font-size: 18px;"></i>
+                </a>
+            </li>
         </ul>
     </div>
 </div>
-  
-<!-- Logout Confirmation Modal -->
-<div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="logoutModalLabel">Konfirmasi</h5>
-               
-            </div>
-            <div class="modal-body">
-                Apakah anda yakin untuk logout?
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tidak</button>
-                <button type="button" class="btn btn-success" id="confirmLogout">Ya</button>
-            </div>
-        </div>
-    </div>
-</div>
 
-
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-
-</body>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script>
-      document.getElementById('confirmLogout').addEventListener('click', function() {
-        window.location.href = '12410475/Logout.html'; // Redirect to logout page
-    });
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggleBtn = document.getElementById("toggleFormBtn");
+        const journalForm = document.getElementById("journal-form");
 
-    // Trigger modal when logout link is clicked
-    document.querySelector('a[href="12410475/Logout.html"]').addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent default link behavior
-        var logoutModal = new bootstrap.Modal(document.getElementById('logoutModal'));
-        logoutModal.show();
+        toggleBtn.addEventListener("click", function (event) {
+            event.preventDefault(); // Mencegah submit form jika tombol berada dalam elemen form
+            journalForm.classList.toggle("hidden");
+        });
     });
 </script>
+
 
 </html>

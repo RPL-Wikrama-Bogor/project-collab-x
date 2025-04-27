@@ -72,7 +72,8 @@ aside #toggle-navbar {
   font-size: 14px;
   line-height: 21px;
   color: #ABB3C4;
-  margin-top: 40 12px;
+  margin-top: 40px;
+  margin-bottom: 12px;
 }
 .sidebar-item {
   text-decoration: none;
@@ -129,7 +130,7 @@ aside #toggle-navbar {
 }
 @media (min-width: 1200px) {
   .nav {
-    padding: 50px 64px 0px 0px;
+    padding: 50px 64px 24px 0px;
   }
 }
 .nav .btn-notif {
@@ -199,11 +200,8 @@ aside #toggle-navbar {
   font-weight: 300;
   font-size: 12px;
   line-height: 18px;
-  width: 100%;
-}
-
-.nav-input::placeholder{
   color: #ABB3C4;
+  width: 100%;
 }
 @media (min-width: 576px) {
   .nav-input {
@@ -214,7 +212,7 @@ aside #toggle-navbar {
 }
 
 .content {
-  padding: 10px 14px 10px 14px;
+  padding: 10px 14px 24px 14px;
 }
 @media (min-width: 1200px) {
   .content {
@@ -225,6 +223,7 @@ aside #toggle-navbar {
 .content-title {
   font-weight: 500;
   font-size: 20px;
+  line-height: 30px;
   color: #121F3E;
 }
 .content-title:first-of-type {
@@ -348,17 +347,6 @@ aside #toggle-navbar {
   margin-right: 16px;
   border-radius: 50%;
 }
-
-#categories {
-  margin-left: 38px;
-  color: #ABB3C4;
-}
-
-#categories:hover{
-  color: rgb(130, 130, 130);
-  cursor: pointer;
-}
-
 .document-card .document-item .document-icon.award {
   background: #F4F9EC;
 }
@@ -383,7 +371,6 @@ aside #toggle-navbar {
   margin-bottom: 20px;
   border-bottom: 1px solid #F7F7FA;
 }
-
 .document-title {
   font-weight: 600;
   font-size: 16px;
@@ -405,8 +392,7 @@ aside #toggle-navbar {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  color: white;
-  background: #2ED16C;
+  background: #F8F8FA;
 }
 
 .employee-stat {
@@ -638,144 +624,147 @@ aside #toggle-navbar {
   }
 }
 
-.accordion-button {
-  background-color: #f0f0f0;
-  color: #333;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.accordion-button:not(.collapsed) {
-  background-color: #56b859;
-  color: white;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
 
-.accordion-button:focus {
-  box-shadow: none;
-  border-color: #56b859;
-}
-
-.checked {
-  color: orange;
-}
-
-.heading {
-  font-size: 25px;
-  margin-right: 25px;
-}
-
-h5{
+.header {
   text-align: center;
-  font-size: 30px;
+  margin-bottom: 30px;
 }
 
-.col p{
-  font-size: 18px;
+.header h1 {
+  font-size: 3rem;
+  color: #004235;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 
-.comment-overlay {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.8);
-      z-index: 1050;
-      justify-content: center;
-      align-items: center;
-  }
+.header h2 {
+  font-size: 1.8rem;
+  color: #00bc45;
+  font-weight: 300;
+}
+
+.team-container {
+  display: block;
+  overflow-x: auto;
+  gap: 25px;
+  padding: 20px 0;
+}
+
+.team-container::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.team-card {
+  min-width: 300px;
+  height: 180px;
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(106, 48, 147, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-card:hover {
+  transform: scale(1.5);
+  box-shadow: 0 12px 25px rgba(106, 48, 147, 0.2);
+}
+
+.team-card h3 {
+  font-size: 1.5rem;
+  color: #00ff04;
+  margin-bottom: 5px;
+  z-index: 2;
   
-  .comment-box {
-      width: 90%;
-      max-width: 600px;
-      height: auto;
-      max-height: 90vh;
-      overflow-y: auto;
-  }
-  
-  .character-count {
-      text-align: right;
-      font-size: 0.8rem;
-      color: #6c757d;
-  }
-
-  .jumbotron {
-background: url('https://img.freepik.com/free-photo/flat-lay-tropical-leaves_23-2148817590.jpg?t=st=1743331178~exp=1743334778~hmac=f558b5bf51ae59d8e0ef1e1870b02a30a95c636809b9a0003e670ff71d32b52b&w=1380') no-repeat center center;
-background-size: cover;
-color: white;
-text-align: center;
-padding: 50px;
-margin-left: 320px;
-}
-.jumbotron h1 {
-font-weight: bold;
-background: rgba(0, 0, 0, 0.6);
-padding: 20px 40px;
-border-radius: 20px;
 }
 
+.team-card p {
+  color: #777;
+  font-size: 1.1rem;
+  z-index: 2;
+}
 
-.review-overlay {
-  display: none;
+.image-display {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 1050;
+  top: 50%;
+  right: -500px; /* Start off-screen to the right */
+  transform: translateY(-50%);
+  width: 450px;
+  height: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  transition: right 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* Animate right property */
+  background: white;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.review-box {
-  width: 90%;
-  max-width: 500px;
-  height: auto;
+.image-display.active {
+  right: calc(10% - 100px); /* Center horizontally (half of width) */
 }
 
-.stars-container {
-  font-size: 2rem;
-  text-align: center;
-  margin: 20px 0;
+#displayed-image {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 10px;
 }
 
-.star {
-  color: #ddd;
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 1rem;
   cursor: pointer;
-  transition: color 0.2s;
-  margin: 0 5px;
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.star:hover,
-.star.active {
-  color: #ffc107;
-}
-
-@media (max-width: 768px) {
-  .review-box {
-      width: 95%;
-  }
-  
-  .stars-container {
-      font-size: 1.8rem;
-  }
-=======
-#pop-logo{
-  color: #2DB878;
-}
-
-.sidebar-item:hover #pop-logo{
-  color: #259963;
-}
-
-.sidebar-item:hover #pop-items{
-  color: #259963;
-}
-
-a{
-  text-decoration: none;
-}
-
-#leaf{
-  color: #19C078;
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

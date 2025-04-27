@@ -1,0 +1,135 @@
+*, html {
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-item.border-b {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.nav-link.active {
+    color: #2e7d32 !important;
+    font-weight: 600;
+}
+
+/* Make dropdown look clean with padding adjustments */
+.dropdown-menu li:last-child .dropdown-item {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom: none;
+  }
+  
+  /* Navbar spacing*/
+  .navbar-nav .nav-link {
+    font-size: 15px;
+  }
+  
+  /* Fix spacing inside navbar */
+  .navbar {
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+  }
+
+  /* Teks lebih konsisten */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Perhalus jarak antar dropdown item */
+  .dropdown-item {
+    padding: 8px 15px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  /* Nav item spacing konsisten */
+  .navbar-nav .nav-item {
+    margin: 0 4px;
+  }
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.plants-info h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color:#041e42;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.popular-box {
+    background-color: whitesmoke;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px #041e42;
+    width: calc(30% - 30px);
+    text-align: center;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.popular-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px #041e42;
+}
+
+.Popular {
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+.PopularPlants h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5rem;
+    color: seagreen;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.PopularPlants p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: greenyellow;
+    margin-bottom: 40px;
+}
+
+span {
+    color: green;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.plant-image {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .plant-image {
+  transform: scale(1.05);
+}
+
+.star {
+  color: gold;
+  font-size: 1.2rem;
+  transition: transform 0.2s;
+}
+
+.card:hover .star {
+  transform: scale(1.1);
+}
+

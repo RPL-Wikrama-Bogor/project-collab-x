@@ -13,8 +13,8 @@ document.getElementById('journalForm').addEventListener('submit', function (e) {
             const imageURL = e.target.result;
 
             const card = `
-                    <div class="col-md-8">
-                        <div class="card border-0 shadow-lg rounded-5 overflow-hidden animate__animated animate__fadeInUp">
+                    <div class="col-md-8 ">
+                        <div class="card justify-content-center border-0 shadow-lg rounded-5 overflow-hidden animate__animated animate__fadeInUp">
                             <img src="${imageURL}" class="card-img-top" alt="Journal Image" style="object-fit: cover; height: 300px;">
                             <div class="card-body">
                                 <h4 class="card-title fw-bold">${title}</h4>
@@ -36,6 +36,6 @@ document.getElementById('view').addEventListener('click', function () {
     const card = document.getElementById('journalPreview');
     if (card) {
         card.classList.toggle('d-none');
-        card.classList.toggle('d-block');
+        card.classList.toggle('d-flex');
     }
 })
